@@ -179,4 +179,4 @@ MIT License — see [LICENSE](LICENSE)
 
 ---
 
-*MSc Mechatronics — Factory 5.0 Portfolio Project | Germany*
+*Ravinder Singh | MSc Mechatronics & Cyber physical systems |  Factory 5.0 | Germany*
