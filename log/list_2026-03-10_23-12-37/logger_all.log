@@ -1,0 +1,209 @@
+[1.109s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/workspaces/factory50_ws']
+[1.110s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/workspaces/factory50_ws'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x70a37c973aa0>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x70a37c91e660>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x70a37c91e660>>, mixin_verb=('list',))
+[1.677s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.711s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[1.716s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastdds.meta'
+[1.723s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[1.727s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.729s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.732s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.734s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.741s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/workspaces/factory50_ws'
+[1.766s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws) by extensions ['ignore', 'ignore_ament_install']
+[1.773s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws) by extension 'ignore'
+[1.776s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws) by extension 'ignore_ament_install'
+[1.783s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws) by extensions ['colcon_pkg']
+[1.787s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws) by extension 'colcon_pkg'
+[1.800s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws) by extensions ['colcon_meta']
+[1.801s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws) by extension 'colcon_meta'
+[1.803s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws) by extensions ['ros']
+[1.808s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws) by extension 'ros'
+[2.427s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws) by extensions ['cmake', 'python']
+[2.431s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws) by extension 'cmake'
+[2.432s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws) by extension 'python'
+[2.434s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws) by extensions ['python_setup_py']
+[2.434s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws) by extension 'python_setup_py'
+[2.441s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[2.444s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/build) by extension 'ignore'
+[2.450s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/build) ignored
+[2.463s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[2.466s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/install) by extension 'ignore'
+[2.475s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/install) ignored
+[2.501s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[2.502s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/log) by extension 'ignore'
+[2.506s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/log) ignored
+[2.527s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/notebooks) by extensions ['ignore', 'ignore_ament_install']
+[2.528s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/notebooks) by extension 'ignore'
+[2.535s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/notebooks) by extension 'ignore_ament_install'
+[2.542s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/notebooks) by extensions ['colcon_pkg']
+[2.543s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/notebooks) by extension 'colcon_pkg'
+[2.548s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/notebooks) by extensions ['colcon_meta']
+[2.549s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/notebooks) by extension 'colcon_meta'
+[2.564s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/notebooks) by extensions ['ros']
+[2.567s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/notebooks) by extension 'ros'
+[2.285s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/notebooks) by extensions ['cmake', 'python']
+[2.286s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/notebooks) by extension 'cmake'
+[2.292s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/notebooks) by extension 'python'
+[2.294s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/notebooks) by extensions ['python_setup_py']
+[1.834s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/notebooks) by extension 'python_setup_py'
+[1.858s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/scripts) by extensions ['ignore', 'ignore_ament_install']
+[1.864s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/scripts) by extension 'ignore'
+[1.874s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/scripts) by extension 'ignore_ament_install'
+[1.880s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/scripts) by extensions ['colcon_pkg']
+[1.885s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/scripts) by extension 'colcon_pkg'
+[1.889s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/scripts) by extensions ['colcon_meta']
+[1.892s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/scripts) by extension 'colcon_meta'
+[1.898s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/scripts) by extensions ['ros']
+[1.906s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/scripts) by extension 'ros'
+[1.930s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/scripts) by extensions ['cmake', 'python']
+[1.941s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/scripts) by extension 'cmake'
+[1.948s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/scripts) by extension 'python'
+[1.961s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/scripts) by extensions ['python_setup_py']
+[1.965s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/scripts) by extension 'python_setup_py'
+[1.987s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[1.997s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src) by extension 'ignore'
+[2.013s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src) by extension 'ignore_ament_install'
+[2.016s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src) by extensions ['colcon_pkg']
+[2.020s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src) by extension 'colcon_pkg'
+[2.025s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src) by extensions ['colcon_meta']
+[2.030s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src) by extension 'colcon_meta'
+[2.036s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src) by extensions ['ros']
+[2.038s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src) by extension 'ros'
+[2.058s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src) by extensions ['cmake', 'python']
+[2.062s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src) by extension 'cmake'
+[2.067s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src) by extension 'python'
+[2.073s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src) by extensions ['python_setup_py']
+[2.075s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src) by extension 'python_setup_py'
+[2.106s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/Universal_Robots_ROS2_Description) by extensions ['ignore', 'ignore_ament_install']
+[2.108s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/Universal_Robots_ROS2_Description) by extension 'ignore'
+[2.109s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/Universal_Robots_ROS2_Description) by extension 'ignore_ament_install'
+[2.116s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/Universal_Robots_ROS2_Description) by extensions ['colcon_pkg']
+[2.121s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/Universal_Robots_ROS2_Description) by extension 'colcon_pkg'
+[2.125s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/Universal_Robots_ROS2_Description) by extensions ['colcon_meta']
+[2.127s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/Universal_Robots_ROS2_Description) by extension 'colcon_meta'
+[2.130s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/Universal_Robots_ROS2_Description) by extensions ['ros']
+[2.132s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/Universal_Robots_ROS2_Description) by extension 'ros'
+[2.249s] DEBUG:colcon.colcon_core.package_identification:Package '/workspaces/factory50_ws/src/Universal_Robots_ROS2_Description' with type 'ros.ament_cmake' and name 'ur_description'
+[2.268s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl) by extensions ['ignore', 'ignore_ament_install']
+[2.282s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl) by extension 'ignore'
+[2.293s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl) by extension 'ignore_ament_install'
+[2.309s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl) by extensions ['colcon_pkg']
+[2.321s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl) by extension 'colcon_pkg'
+[2.345s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl) by extensions ['colcon_meta']
+[2.346s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl) by extension 'colcon_meta'
+[2.361s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl) by extensions ['ros']
+[2.373s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl) by extension 'ros'
+[2.593s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl) by extensions ['cmake', 'python']
+[2.608s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl) by extension 'cmake'
+[2.614s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl) by extension 'python'
+[2.630s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl) by extensions ['python_setup_py']
+[2.631s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl) by extension 'python_setup_py'
+[2.660s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl) by extensions ['ignore', 'ignore_ament_install']
+[2.661s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl) by extension 'ignore'
+[2.669s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl) by extension 'ignore_ament_install'
+[2.686s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl) by extensions ['colcon_pkg']
+[2.688s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl) by extension 'colcon_pkg'
+[2.695s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl) by extensions ['colcon_meta']
+[2.700s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl) by extension 'colcon_meta'
+[2.711s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl) by extensions ['ros']
+[2.712s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl) by extension 'ros'
+[2.729s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl) by extensions ['cmake', 'python']
+[2.730s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl) by extension 'cmake'
+[2.734s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl) by extension 'python'
+[2.739s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl) by extensions ['python_setup_py']
+[2.741s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl) by extension 'python_setup_py'
+[2.760s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl/agents) by extensions ['ignore', 'ignore_ament_install']
+[2.760s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl/agents) by extension 'ignore'
+[2.766s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl/agents) by extension 'ignore_ament_install'
+[2.773s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl/agents) by extensions ['colcon_pkg']
+[2.774s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl/agents) by extension 'colcon_pkg'
+[2.784s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl/agents) by extensions ['colcon_meta']
+[2.788s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl/agents) by extension 'colcon_meta'
+[2.800s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl/agents) by extensions ['ros']
+[2.802s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl/agents) by extension 'ros'
+[2.848s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl/agents) by extensions ['cmake', 'python']
+[2.850s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl/agents) by extension 'cmake'
+[2.862s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl/agents) by extension 'python'
+[2.883s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl/agents) by extensions ['python_setup_py']
+[2.884s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl/agents) by extension 'python_setup_py'
+[2.941s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl/envs) by extensions ['ignore', 'ignore_ament_install']
+[2.943s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl/envs) by extension 'ignore'
+[2.957s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl/envs) by extension 'ignore_ament_install'
+[2.988s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl/envs) by extensions ['colcon_pkg']
+[2.992s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl/envs) by extension 'colcon_pkg'
+[3.012s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl/envs) by extensions ['colcon_meta']
+[3.013s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl/envs) by extension 'colcon_meta'
+[3.035s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl/envs) by extensions ['ros']
+[3.039s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl/envs) by extension 'ros'
+[3.084s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl/envs) by extensions ['cmake', 'python']
+[3.085s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl/envs) by extension 'cmake'
+[3.099s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl/envs) by extension 'python'
+[3.112s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl/envs) by extensions ['python_setup_py']
+[3.115s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_marl/factory50_marl/envs) by extension 'python_setup_py'
+[3.144s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_perception) by extensions ['ignore', 'ignore_ament_install']
+[3.145s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_perception) by extension 'ignore'
+[3.154s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_perception) by extension 'ignore_ament_install'
+[3.163s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_perception) by extensions ['colcon_pkg']
+[3.164s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_perception) by extension 'colcon_pkg'
+[3.169s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_perception) by extensions ['colcon_meta']
+[3.170s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_perception) by extension 'colcon_meta'
+[3.175s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_perception) by extensions ['ros']
+[3.176s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_perception) by extension 'ros'
+[3.188s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_perception) by extensions ['cmake', 'python']
+[3.191s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_perception) by extension 'cmake'
+[3.194s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_perception) by extension 'python'
+[3.196s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_perception) by extensions ['python_setup_py']
+[3.198s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_perception) by extension 'python_setup_py'
+[3.219s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_perception/factory50_perception) by extensions ['ignore', 'ignore_ament_install']
+[3.221s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_perception/factory50_perception) by extension 'ignore'
+[3.225s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_perception/factory50_perception) by extension 'ignore_ament_install'
+[3.237s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_perception/factory50_perception) by extensions ['colcon_pkg']
+[3.239s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_perception/factory50_perception) by extension 'colcon_pkg'
+[3.244s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_perception/factory50_perception) by extensions ['colcon_meta']
+[3.245s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_perception/factory50_perception) by extension 'colcon_meta'
+[3.254s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_perception/factory50_perception) by extensions ['ros']
+[3.257s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_perception/factory50_perception) by extension 'ros'
+[3.298s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_perception/factory50_perception) by extensions ['cmake', 'python']
+[3.299s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_perception/factory50_perception) by extension 'cmake'
+[3.304s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_perception/factory50_perception) by extension 'python'
+[3.312s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_perception/factory50_perception) by extensions ['python_setup_py']
+[3.315s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_perception/factory50_perception) by extension 'python_setup_py'
+[3.332s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_twin) by extensions ['ignore', 'ignore_ament_install']
+[3.337s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_twin) by extension 'ignore'
+[3.338s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_twin) by extension 'ignore_ament_install'
+[3.340s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_twin) by extensions ['colcon_pkg']
+[3.343s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_twin) by extension 'colcon_pkg'
+[3.345s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_twin) by extensions ['colcon_meta']
+[3.345s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_twin) by extension 'colcon_meta'
+[3.348s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_twin) by extensions ['ros']
+[3.349s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_twin) by extension 'ros'
+[3.367s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_twin) by extensions ['cmake', 'python']
+[3.368s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_twin) by extension 'cmake'
+[3.372s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_twin) by extension 'python'
+[3.375s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_twin) by extensions ['python_setup_py']
+[3.375s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_twin) by extension 'python_setup_py'
+[3.407s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_twin/factory50_twin) by extensions ['ignore', 'ignore_ament_install']
+[3.407s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_twin/factory50_twin) by extension 'ignore'
+[3.417s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_twin/factory50_twin) by extension 'ignore_ament_install'
+[3.433s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_twin/factory50_twin) by extensions ['colcon_pkg']
+[3.434s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_twin/factory50_twin) by extension 'colcon_pkg'
+[3.445s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_twin/factory50_twin) by extensions ['colcon_meta']
+[3.448s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_twin/factory50_twin) by extension 'colcon_meta'
+[3.469s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_twin/factory50_twin) by extensions ['ros']
+[3.471s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_twin/factory50_twin) by extension 'ros'
+[3.510s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_twin/factory50_twin) by extensions ['cmake', 'python']
+[3.511s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_twin/factory50_twin) by extension 'cmake'
+[3.524s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_twin/factory50_twin) by extension 'python'
+[3.532s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_twin/factory50_twin) by extensions ['python_setup_py']
+[3.536s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/factory50_twin/factory50_twin) by extension 'python_setup_py'
+[3.561s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/franka_description) by extensions ['ignore', 'ignore_ament_install']
+[3.563s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/franka_description) by extension 'ignore'
+[3.567s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/franka_description) by extension 'ignore_ament_install'
+[3.574s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/franka_description) by extensions ['colcon_pkg']
+[3.581s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/franka_description) by extension 'colcon_pkg'
+[3.583s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/franka_description) by extensions ['colcon_meta']
+[3.586s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/franka_description) by extension 'colcon_meta'
+[3.601s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/franka_description) by extensions ['ros']
+[3.605s] Level 1:colcon.colcon_core.package_identification:_identify(/workspaces/factory50_ws/src/franka_description) by extension 'ros'
+[3.656s] DEBUG:colcon.colcon_core.package_identification:Package '/workspaces/factory50_ws/src/franka_description' with type 'ros.ament_cmake' and name 'franka_description'
+[3.663s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults

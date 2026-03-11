@@ -1,0 +1,55 @@
+{
+  "name": "Factory 5.0 — Dual-Arm MARL Workcell",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+
+  // ── GPU passthrough (WSL2 + Docker Desktop) ────────────────────────────────
+  "runArgs": [
+    "--gpus", "all",
+    "--privileged",
+    "--network", "host",
+    "-e", "DISPLAY=${localEnv:DISPLAY}",
+    "-v", "/tmp/.X11-unix:/tmp/.X11-unix:rw"
+  ],
+
+  // ── VS Code Extensions ─────────────────────────────────────────────────────
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.black-formatter",
+        "ms-iot.vscode-ros",
+        "twxs.cmake",
+        "ms-vscode.cmake-tools",
+        "foxglove.foxglove-studio",
+        "github.copilot",
+        "eamodio.gitlens",
+        "charliermarsh.ruff"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/bin/python3",
+        "editor.formatOnSave": true,
+        "python.formatting.provider": "black",
+        "ros.distro": "jazzy"
+      }
+    }
+  },
+
+  // ── Port Forwarding ────────────────────────────────────────────────────────
+  "forwardPorts": [
+    3000,   // Grafana dashboard
+    8086,   // InfluxDB
+    8765,   // Foxglove WebSocket bridge
+    4040    // WandB local server
+  ],
+  "portsAttributes": {
+    "3000":  { "label": "Grafana Dashboard" },
+    "8086":  { "label": "InfluxDB" },
+    "8765":  { "label": "Foxglove Bridge" }
+  },
+
+  "postCreateCommand": "bash /workspaces/factory50_ws/scripts/setup.sh",
+  "remoteUser": "root"
+}

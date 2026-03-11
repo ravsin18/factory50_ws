@@ -1,0 +1,1729 @@
+[0.000000] (-) TimerEvent: {}
+[0.002010] (franka_description) JobQueued: {'identifier': 'franka_description', 'dependencies': OrderedDict()}
+[0.004979] (ur_description) JobQueued: {'identifier': 'ur_description', 'dependencies': OrderedDict()}
+[0.005848] (franka_description) JobStarted: {'identifier': 'franka_description'}
+[0.088185] (-) TimerEvent: {}
+[0.111983] (ur_description) JobStarted: {'identifier': 'ur_description'}
+[0.182405] (franka_description) JobProgress: {'identifier': 'franka_description', 'progress': 'cmake'}
+[0.188500] (-) TimerEvent: {}
+[0.289235] (-) TimerEvent: {}
+[0.307110] (franka_description) Command: {'cmd': ['/usr/bin/cmake', '/workspaces/factory50_ws/src/franka_description', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/workspaces/factory50_ws/install/franka_description'], 'cwd': '/workspaces/factory50_ws/build/franka_description', 'env': OrderedDict({'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'docker-desktop', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/workspaces/factory50_ws', 'ROS_PYTHON_VERSION': '3', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-90dde2c9-e600-4bea-babe-d3ebfa4a6923.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'graphics,utility,compute', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': '1', 'LANG': 'C.UTF-8', 'LS_COLORS': '', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'dialog', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspaces/factory50_ws/build/franka_description', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.331305] (ur_description) JobProgress: {'identifier': 'ur_description', 'progress': 'cmake'}
+[0.389757] (-) TimerEvent: {}
+[0.397222] (ur_description) Command: {'cmd': ['/usr/bin/cmake', '/workspaces/factory50_ws/src/Universal_Robots_ROS2_Description', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/workspaces/factory50_ws/install/ur_description'], 'cwd': '/workspaces/factory50_ws/build/ur_description', 'env': OrderedDict({'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'docker-desktop', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/workspaces/factory50_ws', 'ROS_PYTHON_VERSION': '3', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-90dde2c9-e600-4bea-babe-d3ebfa4a6923.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'graphics,utility,compute', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': '1', 'LANG': 'C.UTF-8', 'LS_COLORS': '', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'dialog', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspaces/factory50_ws/build/ur_description', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.489961] (-) TimerEvent: {}
+[0.591158] (-) TimerEvent: {}
+[0.692071] (-) TimerEvent: {}
+[0.792777] (-) TimerEvent: {}
+[0.894292] (-) TimerEvent: {}
+[0.995082] (-) TimerEvent: {}
+[1.095908] (-) TimerEvent: {}
+[1.197050] (-) TimerEvent: {}
+[1.298857] (-) TimerEvent: {}
+[1.402362] (-) TimerEvent: {}
+[1.509386] (-) TimerEvent: {}
+[1.610518] (-) TimerEvent: {}
+[1.712261] (-) TimerEvent: {}
+[1.812966] (-) TimerEvent: {}
+[1.860644] (franka_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[1.864938] (ur_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[1.913162] (-) TimerEvent: {}
+[2.014011] (-) TimerEvent: {}
+[2.114916] (-) TimerEvent: {}
+[2.216824] (-) TimerEvent: {}
+[2.318229] (-) TimerEvent: {}
+[2.419976] (-) TimerEvent: {}
+[2.521411] (-) TimerEvent: {}
+[2.624103] (-) TimerEvent: {}
+[2.725433] (-) TimerEvent: {}
+[2.826862] (-) TimerEvent: {}
+[2.860208] (franka_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[2.911006] (ur_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[2.929986] (-) TimerEvent: {}
+[3.051723] (-) TimerEvent: {}
+[3.156219] (-) TimerEvent: {}
+[3.257134] (-) TimerEvent: {}
+[3.268286] (franka_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.271088] (ur_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.358116] (-) TimerEvent: {}
+[3.458957] (-) TimerEvent: {}
+[3.563352] (-) TimerEvent: {}
+[3.666141] (-) TimerEvent: {}
+[3.769201] (-) TimerEvent: {}
+[3.870250] (-) TimerEvent: {}
+[3.972529] (-) TimerEvent: {}
+[4.073955] (-) TimerEvent: {}
+[4.176402] (-) TimerEvent: {}
+[4.277022] (-) TimerEvent: {}
+[4.377980] (-) TimerEvent: {}
+[4.484343] (-) TimerEvent: {}
+[4.608614] (-) TimerEvent: {}
+[4.724914] (-) TimerEvent: {}
+[4.832288] (-) TimerEvent: {}
+[4.943317] (-) TimerEvent: {}
+[5.050830] (-) TimerEvent: {}
+[5.171178] (-) TimerEvent: {}
+[5.288199] (-) TimerEvent: {}
+[5.399881] (-) TimerEvent: {}
+[5.502919] (-) TimerEvent: {}
+[5.604162] (-) TimerEvent: {}
+[5.705119] (-) TimerEvent: {}
+[5.805833] (-) TimerEvent: {}
+[5.922082] (-) TimerEvent: {}
+[6.024561] (-) TimerEvent: {}
+[6.129366] (-) TimerEvent: {}
+[6.230382] (-) TimerEvent: {}
+[6.336473] (-) TimerEvent: {}
+[6.437297] (-) TimerEvent: {}
+[6.540451] (-) TimerEvent: {}
+[6.642050] (-) TimerEvent: {}
+[6.688726] (ur_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[6.742744] (-) TimerEvent: {}
+[6.789912] (ur_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[6.791194] (ur_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[6.792606] (franka_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[6.795535] (ur_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[6.842883] (-) TimerEvent: {}
+[6.879833] (franka_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[6.881991] (franka_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[6.884573] (franka_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[6.943132] (-) TimerEvent: {}
+[6.977544] (ur_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[7.043407] (-) TimerEvent: {}
+[7.057000] (franka_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[7.143822] (-) TimerEvent: {}
+[7.245270] (-) TimerEvent: {}
+[7.350258] (-) TimerEvent: {}
+[7.452056] (-) TimerEvent: {}
+[7.553428] (-) TimerEvent: {}
+[7.654560] (-) TimerEvent: {}
+[7.790997] (-) TimerEvent: {}
+[7.903209] (-) TimerEvent: {}
+[8.004543] (-) TimerEvent: {}
+[8.117032] (-) TimerEvent: {}
+[8.222378] (-) TimerEvent: {}
+[8.324075] (-) TimerEvent: {}
+[8.428615] (-) TimerEvent: {}
+[8.529571] (-) TimerEvent: {}
+[8.639622] (-) TimerEvent: {}
+[8.744263] (-) TimerEvent: {}
+[8.852524] (-) TimerEvent: {}
+[8.953362] (-) TimerEvent: {}
+[9.055905] (-) TimerEvent: {}
+[9.157190] (-) TimerEvent: {}
+[9.266426] (-) TimerEvent: {}
+[9.367400] (-) TimerEvent: {}
+[9.471723] (-) TimerEvent: {}
+[9.576333] (-) TimerEvent: {}
+[9.679319] (-) TimerEvent: {}
+[9.783356] (-) TimerEvent: {}
+[9.884876] (-) TimerEvent: {}
+[9.985783] (-) TimerEvent: {}
+[10.087126] (-) TimerEvent: {}
+[10.187945] (-) TimerEvent: {}
+[10.294697] (-) TimerEvent: {}
+[10.404214] (-) TimerEvent: {}
+[10.504861] (-) TimerEvent: {}
+[10.605730] (-) TimerEvent: {}
+[10.706495] (-) TimerEvent: {}
+[10.730308] (franka_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[10.806775] (-) TimerEvent: {}
+[10.844419] (ur_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[10.879434] (franka_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[10.885074] (franka_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[10.886967] (franka_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[10.907380] (-) TimerEvent: {}
+[10.928392] (ur_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[10.932425] (ur_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[10.934731] (ur_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[11.007726] (-) TimerEvent: {}
+[11.112227] (-) TimerEvent: {}
+[11.213578] (-) TimerEvent: {}
+[11.273773] (ur_description) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[11.280479] (franka_description) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[11.313804] (-) TimerEvent: {}
+[11.418841] (-) TimerEvent: {}
+[11.519779] (-) TimerEvent: {}
+[11.628939] (-) TimerEvent: {}
+[11.729776] (-) TimerEvent: {}
+[11.830577] (-) TimerEvent: {}
+[11.948324] (-) TimerEvent: {}
+[12.052141] (-) TimerEvent: {}
+[12.153386] (-) TimerEvent: {}
+[12.259757] (-) TimerEvent: {}
+[12.360425] (-) TimerEvent: {}
+[12.461615] (-) TimerEvent: {}
+[12.562615] (-) TimerEvent: {}
+[12.612198] (franka_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[12.662972] (-) TimerEvent: {}
+[12.748778] (ur_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[12.763234] (-) TimerEvent: {}
+[12.863925] (-) TimerEvent: {}
+[12.964664] (-) TimerEvent: {}
+[13.070100] (-) TimerEvent: {}
+[13.171469] (-) TimerEvent: {}
+[13.253877] (franka_description) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[13.271815] (-) TimerEvent: {}
+[13.360378] (ur_description) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[13.372286] (-) TimerEvent: {}
+[13.473041] (-) TimerEvent: {}
+[13.576228] (-) TimerEvent: {}
+[13.678399] (-) TimerEvent: {}
+[13.787893] (-) TimerEvent: {}
+[13.909067] (-) TimerEvent: {}
+[14.010544] (-) TimerEvent: {}
+[14.114898] (-) TimerEvent: {}
+[14.215826] (-) TimerEvent: {}
+[14.316779] (-) TimerEvent: {}
+[14.417259] (-) TimerEvent: {}
+[14.517987] (-) TimerEvent: {}
+[14.620651] (-) TimerEvent: {}
+[14.740758] (-) TimerEvent: {}
+[14.762140] (franka_description) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[14.809887] (ur_description) StdoutLine: {'line': b'-- Found ament_cmake_pytest: 2.5.5 (/opt/ros/jazzy/share/ament_cmake_pytest/cmake)\n'}
+[14.841119] (-) TimerEvent: {}
+[14.942188] (-) TimerEvent: {}
+[15.044449] (-) TimerEvent: {}
+[15.145649] (-) TimerEvent: {}
+[15.291285] (-) TimerEvent: {}
+[15.423696] (-) TimerEvent: {}
+[15.526109] (-) TimerEvent: {}
+[15.627999] (-) TimerEvent: {}
+[15.729887] (-) TimerEvent: {}
+[15.831005] (-) TimerEvent: {}
+[15.931933] (-) TimerEvent: {}
+[16.032581] (-) TimerEvent: {}
+[16.133493] (-) TimerEvent: {}
+[16.234441] (-) TimerEvent: {}
+[16.335064] (-) TimerEvent: {}
+[16.435722] (-) TimerEvent: {}
+[16.536486] (-) TimerEvent: {}
+[16.637433] (-) TimerEvent: {}
+[16.740260] (-) TimerEvent: {}
+[16.842720] (-) TimerEvent: {}
+[16.944265] (-) TimerEvent: {}
+[17.052795] (-) TimerEvent: {}
+[17.156210] (-) TimerEvent: {}
+[17.258840] (-) TimerEvent: {}
+[17.360670] (-) TimerEvent: {}
+[17.463808] (-) TimerEvent: {}
+[17.564955] (-) TimerEvent: {}
+[17.670606] (-) TimerEvent: {}
+[17.779291] (-) TimerEvent: {}
+[17.885151] (-) TimerEvent: {}
+[18.014097] (-) TimerEvent: {}
+[18.114681] (-) TimerEvent: {}
+[18.219002] (-) TimerEvent: {}
+[18.334448] (-) TimerEvent: {}
+[18.435290] (-) TimerEvent: {}
+[18.550124] (-) TimerEvent: {}
+[18.668339] (-) TimerEvent: {}
+[18.789634] (-) TimerEvent: {}
+[18.935852] (-) TimerEvent: {}
+[19.074651] (-) TimerEvent: {}
+[19.196661] (-) TimerEvent: {}
+[19.330274] (-) TimerEvent: {}
+[19.454453] (-) TimerEvent: {}
+[19.579021] (-) TimerEvent: {}
+[19.683097] (-) TimerEvent: {}
+[19.784201] (-) TimerEvent: {}
+[19.885008] (-) TimerEvent: {}
+[19.989007] (-) TimerEvent: {}
+[20.090494] (-) TimerEvent: {}
+[20.192295] (-) TimerEvent: {}
+[20.296573] (-) TimerEvent: {}
+[20.398283] (-) TimerEvent: {}
+[20.502488] (-) TimerEvent: {}
+[20.603314] (-) TimerEvent: {}
+[20.715226] (-) TimerEvent: {}
+[20.816403] (-) TimerEvent: {}
+[20.917327] (-) TimerEvent: {}
+[21.018324] (-) TimerEvent: {}
+[21.119288] (-) TimerEvent: {}
+[21.187633] (franka_description) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[21.219606] (-) TimerEvent: {}
+[21.324459] (-) TimerEvent: {}
+[21.425588] (-) TimerEvent: {}
+[21.526628] (-) TimerEvent: {}
+[21.627448] (-) TimerEvent: {}
+[21.730405] (-) TimerEvent: {}
+[21.833122] (-) TimerEvent: {}
+[21.933776] (-) TimerEvent: {}
+[22.034926] (-) TimerEvent: {}
+[22.135794] (-) TimerEvent: {}
+[22.236461] (-) TimerEvent: {}
+[22.337509] (-) TimerEvent: {}
+[22.438453] (-) TimerEvent: {}
+[22.539317] (-) TimerEvent: {}
+[22.640345] (-) TimerEvent: {}
+[22.748799] (-) TimerEvent: {}
+[22.854906] (-) TimerEvent: {}
+[22.955657] (-) TimerEvent: {}
+[23.056580] (-) TimerEvent: {}
+[23.157204] (-) TimerEvent: {}
+[23.257900] (-) TimerEvent: {}
+[23.359009] (-) TimerEvent: {}
+[23.459605] (-) TimerEvent: {}
+[23.560236] (-) TimerEvent: {}
+[23.661326] (-) TimerEvent: {}
+[23.760892] (ur_description) StdoutLine: {'line': b'-- Configuring done (23.1s)\n'}
+[23.767759] (-) TimerEvent: {}
+[23.868428] (-) TimerEvent: {}
+[23.969294] (-) TimerEvent: {}
+[24.070496] (-) TimerEvent: {}
+[24.171872] (-) TimerEvent: {}
+[24.272878] (-) TimerEvent: {}
+[24.376904] (-) TimerEvent: {}
+[24.480293] (-) TimerEvent: {}
+[24.511635] (ur_description) StdoutLine: {'line': b'-- Generating done (0.6s)\n'}
+[24.578891] (-) TimerEvent: {}
+[24.679849] (-) TimerEvent: {}
+[24.780386] (-) TimerEvent: {}
+[24.880985] (-) TimerEvent: {}
+[24.925340] (ur_description) StdoutLine: {'line': b'-- Build files have been written to: /workspaces/factory50_ws/build/ur_description\n'}
+[24.936970] (ur_description) CommandEnded: {'returncode': 0}
+[24.945975] (ur_description) JobProgress: {'identifier': 'ur_description', 'progress': 'build'}
+[24.952420] (ur_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/factory50_ws/build/ur_description', '--', '-j4', '-l4'], 'cwd': '/workspaces/factory50_ws/build/ur_description', 'env': OrderedDict({'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'docker-desktop', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/workspaces/factory50_ws', 'ROS_PYTHON_VERSION': '3', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-90dde2c9-e600-4bea-babe-d3ebfa4a6923.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'graphics,utility,compute', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': '1', 'LANG': 'C.UTF-8', 'LS_COLORS': '', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'dialog', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspaces/factory50_ws/build/ur_description', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[24.988235] (-) TimerEvent: {}
+[25.088950] (-) TimerEvent: {}
+[25.189494] (-) TimerEvent: {}
+[25.290074] (-) TimerEvent: {}
+[25.348854] (ur_description) CommandEnded: {'returncode': 0}
+[25.367916] (ur_description) JobProgress: {'identifier': 'ur_description', 'progress': 'install'}
+[25.390301] (-) TimerEvent: {}
+[25.398897] (ur_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/factory50_ws/build/ur_description'], 'cwd': '/workspaces/factory50_ws/build/ur_description', 'env': OrderedDict({'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'docker-desktop', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/workspaces/factory50_ws', 'ROS_PYTHON_VERSION': '3', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-90dde2c9-e600-4bea-babe-d3ebfa4a6923.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'graphics,utility,compute', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': '1', 'LANG': 'C.UTF-8', 'LS_COLORS': '', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'dialog', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspaces/factory50_ws/build/ur_description', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[25.421944] (ur_description) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[25.443188] (ur_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[25.490542] (-) TimerEvent: {}
+[25.591385] (-) TimerEvent: {}
+[25.692146] (-) TimerEvent: {}
+[25.792908] (-) TimerEvent: {}
+[25.893764] (-) TimerEvent: {}
+[25.994843] (-) TimerEvent: {}
+[26.097021] (-) TimerEvent: {}
+[26.177694] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/initial_positions.yaml\n'}
+[26.197308] (-) TimerEvent: {}
+[26.298498] (-) TimerEvent: {}
+[26.315546] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur10/default_kinematics.yaml\n'}
+[26.390718] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur10/joint_limits.yaml\n'}
+[26.398712] (-) TimerEvent: {}
+[26.487704] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur10/physical_parameters.yaml\n'}
+[26.498941] (-) TimerEvent: {}
+[26.571948] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur10/visual_parameters.yaml\n'}
+[26.599370] (-) TimerEvent: {}
+[26.699052] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur10e/default_kinematics.yaml\n'}
+[26.702597] (-) TimerEvent: {}
+[26.792696] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur10e/joint_limits.yaml\n'}
+[26.803077] (-) TimerEvent: {}
+[26.883422] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur10e/physical_parameters.yaml\n'}
+[26.903275] (-) TimerEvent: {}
+[26.978055] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur10e/visual_parameters.yaml\n'}
+[27.008205] (-) TimerEvent: {}
+[27.113590] (-) TimerEvent: {}
+[27.122254] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur12e/default_kinematics.yaml\n'}
+[27.213834] (-) TimerEvent: {}
+[27.234966] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur12e/joint_limits.yaml\n'}
+[27.314406] (-) TimerEvent: {}
+[27.325409] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur12e/physical_parameters.yaml\n'}
+[27.418950] (-) TimerEvent: {}
+[27.439712] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur12e/visual_parameters.yaml\n'}
+[27.525644] (-) TimerEvent: {}
+[27.627481] (-) TimerEvent: {}
+[27.648618] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur15/default_kinematics.yaml\n'}
+[27.727931] (-) TimerEvent: {}
+[27.829101] (-) TimerEvent: {}
+[27.949241] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur15/joint_limits.yaml\n'}
+[27.951513] (-) TimerEvent: {}
+[28.054959] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur15/physical_parameters.yaml\n'}
+[28.056139] (-) TimerEvent: {}
+[28.157912] (-) TimerEvent: {}
+[28.216644] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur15/visual_parameters.yaml\n'}
+[28.259654] (-) TimerEvent: {}
+[28.361802] (-) TimerEvent: {}
+[28.451199] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur16e/default_kinematics.yaml\n'}
+[28.462034] (-) TimerEvent: {}
+[28.593037] (-) TimerEvent: {}
+[28.649405] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur16e/joint_limits.yaml\n'}
+[28.693172] (-) TimerEvent: {}
+[29.065496] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur16e/physical_parameters.yaml\n'}
+[29.067192] (-) TimerEvent: {}
+[29.167989] (-) TimerEvent: {}
+[29.268854] (-) TimerEvent: {}
+[29.429316] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur16e/visual_parameters.yaml\n'}
+[29.431328] (-) TimerEvent: {}
+[29.532545] (-) TimerEvent: {}
+[29.606864] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur18/default_kinematics.yaml\n'}
+[29.632931] (-) TimerEvent: {}
+[29.848385] (-) TimerEvent: {}
+[29.951662] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur18/joint_limits.yaml\n'}
+[29.952910] (-) TimerEvent: {}
+[30.053233] (-) TimerEvent: {}
+[30.084170] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur18/physical_parameters.yaml\n'}
+[30.158250] (-) TimerEvent: {}
+[30.246199] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur18/visual_parameters.yaml\n'}
+[30.292500] (-) TimerEvent: {}
+[30.395549] (-) TimerEvent: {}
+[30.501209] (-) TimerEvent: {}
+[30.513252] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur20/default_kinematics.yaml\n'}
+[30.601316] (-) TimerEvent: {}
+[30.665229] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur20/joint_limits.yaml\n'}
+[30.704381] (-) TimerEvent: {}
+[30.778624] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur20/physical_parameters.yaml\n'}
+[30.804688] (-) TimerEvent: {}
+[30.860339] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur20/visual_parameters.yaml\n'}
+[30.905038] (-) TimerEvent: {}
+[30.949731] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur3/default_kinematics.yaml\n'}
+[31.005250] (-) TimerEvent: {}
+[31.033364] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur3/joint_limits.yaml\n'}
+[31.105480] (-) TimerEvent: {}
+[31.124841] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur3/physical_parameters.yaml\n'}
+[31.205674] (-) TimerEvent: {}
+[31.270992] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur3/visual_parameters.yaml\n'}
+[31.306195] (-) TimerEvent: {}
+[31.407857] (-) TimerEvent: {}
+[31.433300] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur30/default_kinematics.yaml\n'}
+[31.508213] (-) TimerEvent: {}
+[31.538936] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur30/joint_limits.yaml\n'}
+[31.605607] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur30/physical_parameters.yaml\n'}
+[31.608359] (-) TimerEvent: {}
+[31.695709] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur30/visual_parameters.yaml\n'}
+[31.708677] (-) TimerEvent: {}
+[31.809891] (-) TimerEvent: {}
+[31.819672] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur3e/default_kinematics.yaml\n'}
+[31.909993] (-) TimerEvent: {}
+[31.915206] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur3e/joint_limits.yaml\n'}
+[31.991425] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur3e/physical_parameters.yaml\n'}
+[32.010170] (-) TimerEvent: {}
+[32.076277] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur3e/visual_parameters.yaml\n'}
+[32.110439] (-) TimerEvent: {}
+[32.178650] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur5/default_kinematics.yaml\n'}
+[32.210771] (-) TimerEvent: {}
+[32.284611] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur5/joint_limits.yaml\n'}
+[32.311084] (-) TimerEvent: {}
+[32.404236] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur5/physical_parameters.yaml\n'}
+[32.411440] (-) TimerEvent: {}
+[32.484199] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur5/visual_parameters.yaml\n'}
+[32.511658] (-) TimerEvent: {}
+[32.566470] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur5e/default_kinematics.yaml\n'}
+[32.611861] (-) TimerEvent: {}
+[32.644153] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur5e/joint_limits.yaml\n'}
+[32.712344] (-) TimerEvent: {}
+[32.722720] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur5e/physical_parameters.yaml\n'}
+[32.812486] (-) TimerEvent: {}
+[32.818128] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur5e/visual_parameters.yaml\n'}
+[32.912682] (-) TimerEvent: {}
+[32.934638] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur7e/default_kinematics.yaml\n'}
+[33.013151] (-) TimerEvent: {}
+[33.029380] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur7e/joint_limits.yaml\n'}
+[33.113484] (-) TimerEvent: {}
+[33.126772] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur7e/physical_parameters.yaml\n'}
+[33.213693] (-) TimerEvent: {}
+[33.216385] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur7e/visual_parameters.yaml\n'}
+[33.313931] (-) TimerEvent: {}
+[33.322951] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur8long/default_kinematics.yaml\n'}
+[33.399664] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur8long/joint_limits.yaml\n'}
+[33.414143] (-) TimerEvent: {}
+[33.476878] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur8long/physical_parameters.yaml\n'}
+[33.514403] (-) TimerEvent: {}
+[33.543458] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/config/ur8long/visual_parameters.yaml\n'}
+[33.614634] (-) TimerEvent: {}
+[33.631462] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/launch/view_ur.launch.py\n'}
+[33.701250] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/launch/view_ur.launch.xml\n'}
+[33.714946] (-) TimerEvent: {}
+[33.815795] (-) TimerEvent: {}
+[33.916517] (-) TimerEvent: {}
+[34.017494] (-) TimerEvent: {}
+[34.118568] (-) TimerEvent: {}
+[34.219549] (-) TimerEvent: {}
+[34.320606] (-) TimerEvent: {}
+[34.421197] (-) TimerEvent: {}
+[34.532285] (-) TimerEvent: {}
+[34.633074] (-) TimerEvent: {}
+[34.733745] (-) TimerEvent: {}
+[34.834311] (-) TimerEvent: {}
+[34.935287] (-) TimerEvent: {}
+[35.035914] (-) TimerEvent: {}
+[35.136985] (-) TimerEvent: {}
+[35.237806] (-) TimerEvent: {}
+[35.338549] (-) TimerEvent: {}
+[35.434116] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur10/collision/base.stl\n'}
+[35.438819] (-) TimerEvent: {}
+[35.523232] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur10/collision/forearm.stl\n'}
+[35.539129] (-) TimerEvent: {}
+[35.608731] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur10/collision/shoulder.stl\n'}
+[35.639296] (-) TimerEvent: {}
+[35.683493] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur10/collision/upperarm.stl\n'}
+[35.739527] (-) TimerEvent: {}
+[35.761985] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur10/collision/wrist1.stl\n'}
+[35.839783] (-) TimerEvent: {}
+[35.848229] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur10/collision/wrist2.stl\n'}
+[35.940816] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur10/collision/wrist3.stl\n'}
+[35.942331] (-) TimerEvent: {}
+[36.043045] (-) TimerEvent: {}
+[36.061533] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur10/visual/base.dae\n'}
+[36.143415] (-) TimerEvent: {}
+[36.152956] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur10/visual/forearm.dae\n'}
+[36.243715] (-) TimerEvent: {}
+[36.244897] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur10/visual/shoulder.dae\n'}
+[36.332844] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur10/visual/upperarm.dae\n'}
+[36.344261] (-) TimerEvent: {}
+[36.425835] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur10/visual/wrist1.dae\n'}
+[36.444432] (-) TimerEvent: {}
+[36.515604] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur10/visual/wrist2.dae\n'}
+[36.544624] (-) TimerEvent: {}
+[36.594731] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur10/visual/wrist3.dae\n'}
+[36.644784] (-) TimerEvent: {}
+[36.692906] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur10e/collision/base.stl\n'}
+[36.745008] (-) TimerEvent: {}
+[36.771694] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur10e/collision/forearm.stl\n'}
+[36.845202] (-) TimerEvent: {}
+[36.873161] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur10e/collision/shoulder.stl\n'}
+[36.945400] (-) TimerEvent: {}
+[36.956702] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur10e/collision/upperarm.stl\n'}
+[37.045577] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur10e/collision/wrist1.stl\n'}
+[37.047349] (-) TimerEvent: {}
+[37.128093] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur10e/collision/wrist2.stl\n'}
+[37.147601] (-) TimerEvent: {}
+[37.210526] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur10e/collision/wrist3.stl\n'}
+[37.247924] (-) TimerEvent: {}
+[37.328092] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur10e/visual/base.dae\n'}
+[37.348296] (-) TimerEvent: {}
+[37.418881] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur10e/visual/forearm.dae\n'}
+[37.448536] (-) TimerEvent: {}
+[37.501466] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur10e/visual/shoulder.dae\n'}
+[37.548695] (-) TimerEvent: {}
+[37.599828] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur10e/visual/upperarm.dae\n'}
+[37.648947] (-) TimerEvent: {}
+[37.673937] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur10e/visual/wrist1.dae\n'}
+[37.748615] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur10e/visual/wrist2.dae\n'}
+[37.750389] (-) TimerEvent: {}
+[37.827587] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur10e/visual/wrist3.dae\n'}
+[37.850680] (-) TimerEvent: {}
+[37.946596] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur15/LICENSE.txt\n'}
+[37.951085] (-) TimerEvent: {}
+[38.052325] (-) TimerEvent: {}
+[38.138829] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur15/collision/base.stl\n'}
+[38.152513] (-) TimerEvent: {}
+[38.241744] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur15/collision/forearm.stl\n'}
+[38.252837] (-) TimerEvent: {}
+[38.353569] (-) TimerEvent: {}
+[38.356143] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur15/collision/shoulder.stl\n'}
+[38.453875] (-) TimerEvent: {}
+[38.464721] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur15/collision/upperarm.stl\n'}
+[38.554083] (-) TimerEvent: {}
+[38.591682] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur15/collision/wrist1.stl\n'}
+[38.654259] (-) TimerEvent: {}
+[38.662228] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur15/collision/wrist2.stl\n'}
+[38.754543] (-) TimerEvent: {}
+[38.758010] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur15/collision/wrist3.stl\n'}
+[38.855198] (-) TimerEvent: {}
+[38.933140] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur15/visual/UR15_DIFF_8bit_2K.jpg\n'}
+[38.955533] (-) TimerEvent: {}
+[39.056375] (-) TimerEvent: {}
+[39.122760] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur15/visual/base.dae\n'}
+[39.156553] (-) TimerEvent: {}
+[39.257129] (-) TimerEvent: {}
+[39.308958] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur15/visual/forearm.dae\n'}
+[39.357403] (-) TimerEvent: {}
+[39.458268] (-) TimerEvent: {}
+[39.462049] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur15/visual/shoulder.dae\n'}
+[39.558805] (-) TimerEvent: {}
+[39.601426] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur15/visual/upperarm.dae\n'}
+[39.659035] (-) TimerEvent: {}
+[39.687373] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur15/visual/wrist1.dae\n'}
+[39.759235] (-) TimerEvent: {}
+[39.818752] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur15/visual/wrist2.dae\n'}
+[39.859531] (-) TimerEvent: {}
+[39.896003] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur15/visual/wrist3.dae\n'}
+[39.959785] (-) TimerEvent: {}
+[40.008509] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur16e/collision/forearm.stl\n'}
+[40.060079] (-) TimerEvent: {}
+[40.157749] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur16e/collision/upperarm.stl\n'}
+[40.160210] (-) TimerEvent: {}
+[40.260819] (-) TimerEvent: {}
+[40.304229] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur16e/visual/forearm.dae\n'}
+[40.361091] (-) TimerEvent: {}
+[40.396364] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur16e/visual/upperarm.dae\n'}
+[40.461444] (-) TimerEvent: {}
+[40.505483] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur18/LICENSE.txt\n'}
+[40.561749] (-) TimerEvent: {}
+[40.612860] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur18/collision/forearm.stl\n'}
+[40.661954] (-) TimerEvent: {}
+[40.694806] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur18/collision/upperarm.stl\n'}
+[40.762242] (-) TimerEvent: {}
+[40.797378] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur18/visual/UR18_DIFF_8bit_2K.jpg\n'}
+[40.862422] (-) TimerEvent: {}
+[40.891841] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur18/visual/forearm.dae\n'}
+[40.962656] (-) TimerEvent: {}
+[40.975888] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur18/visual/upperarm.dae\n'}
+[41.062970] (-) TimerEvent: {}
+[41.085782] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur20/LICENSE.txt\n'}
+[41.163218] (-) TimerEvent: {}
+[41.194971] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur20/collision/base.stl\n'}
+[41.263476] (-) TimerEvent: {}
+[41.277112] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur20/collision/forearm.stl\n'}
+[41.359032] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur20/collision/shoulder.stl\n'}
+[41.363747] (-) TimerEvent: {}
+[41.446993] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur20/collision/upperarm.stl\n'}
+[41.463983] (-) TimerEvent: {}
+[41.539464] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur20/collision/wrist1.stl\n'}
+[41.564313] (-) TimerEvent: {}
+[41.622139] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur20/collision/wrist2.stl\n'}
+[41.664512] (-) TimerEvent: {}
+[41.704051] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur20/collision/wrist3.stl\n'}
+[41.764841] (-) TimerEvent: {}
+[41.801280] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur20/visual/UR20_DIFF_8bit_2K.png\n'}
+[41.865040] (-) TimerEvent: {}
+[41.868353] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur20/visual/base.dae\n'}
+[41.949282] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur20/visual/forearm.dae\n'}
+[41.965510] (-) TimerEvent: {}
+[42.066452] (-) TimerEvent: {}
+[42.080751] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur20/visual/shoulder.dae\n'}
+[42.166783] (-) TimerEvent: {}
+[42.186653] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur20/visual/upperarm.dae\n'}
+[42.267148] (-) TimerEvent: {}
+[42.284612] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur20/visual/wrist1.dae\n'}
+[42.367446] (-) TimerEvent: {}
+[42.387739] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur20/visual/wrist2.dae\n'}
+[42.467700] (-) TimerEvent: {}
+[42.484622] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur20/visual/wrist3.dae\n'}
+[42.568041] (-) TimerEvent: {}
+[42.636847] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur3/collision/base.stl\n'}
+[42.668200] (-) TimerEvent: {}
+[42.731610] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur3/collision/forearm.stl\n'}
+[42.768335] (-) TimerEvent: {}
+[42.834587] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur3/collision/shoulder.stl\n'}
+[42.868487] (-) TimerEvent: {}
+[42.929469] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur3/collision/upperarm.stl\n'}
+[42.968664] (-) TimerEvent: {}
+[43.049948] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur3/collision/wrist1.stl\n'}
+[43.068832] (-) TimerEvent: {}
+[43.128763] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur3/collision/wrist2.stl\n'}
+[43.169013] (-) TimerEvent: {}
+[43.214115] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur3/collision/wrist3.stl\n'}
+[43.269526] (-) TimerEvent: {}
+[43.323866] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur3/visual/base.dae\n'}
+[43.369850] (-) TimerEvent: {}
+[43.412046] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur3/visual/forearm.dae\n'}
+[43.470162] (-) TimerEvent: {}
+[43.502533] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur3/visual/shoulder.dae\n'}
+[43.570375] (-) TimerEvent: {}
+[43.608291] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur3/visual/upperarm.dae\n'}
+[43.670619] (-) TimerEvent: {}
+[43.689473] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur3/visual/wrist1.dae\n'}
+[43.768848] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur3/visual/wrist2.dae\n'}
+[43.770785] (-) TimerEvent: {}
+[43.843215] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur3/visual/wrist3.dae\n'}
+[43.871084] (-) TimerEvent: {}
+[43.928791] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur30/LICENSE.txt\n'}
+[43.971313] (-) TimerEvent: {}
+[44.025652] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur30/collision/forearm.stl\n'}
+[44.071694] (-) TimerEvent: {}
+[44.113552] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur30/collision/upperarm.stl\n'}
+[44.172138] (-) TimerEvent: {}
+[44.216269] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur30/visual/UR30_DIFF_8bit_2K.png\n'}
+[44.272279] (-) TimerEvent: {}
+[44.302586] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur30/visual/forearm.dae\n'}
+[44.372662] (-) TimerEvent: {}
+[44.388901] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur30/visual/upperarm.dae\n'}
+[44.472932] (-) TimerEvent: {}
+[44.508897] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur3e/collision/base.stl\n'}
+[44.573070] (-) TimerEvent: {}
+[44.588728] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur3e/collision/forearm.stl\n'}
+[44.673286] (-) TimerEvent: {}
+[44.682260] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur3e/collision/shoulder.stl\n'}
+[44.757316] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur3e/collision/upperarm.stl\n'}
+[44.773460] (-) TimerEvent: {}
+[44.828488] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur3e/collision/wrist1.stl\n'}
+[44.873654] (-) TimerEvent: {}
+[44.894141] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur3e/collision/wrist2.stl\n'}
+[44.963104] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur3e/collision/wrist3.stl\n'}
+[44.973867] (-) TimerEvent: {}
+[45.070481] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur3e/visual/base.dae\n'}
+[45.074125] (-) TimerEvent: {}
+[45.157160] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur3e/visual/forearm.dae\n'}
+[45.174451] (-) TimerEvent: {}
+[45.240698] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur3e/visual/shoulder.dae\n'}
+[45.274694] (-) TimerEvent: {}
+[45.318292] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur3e/visual/upperarm.dae\n'}
+[45.374963] (-) TimerEvent: {}
+[45.400492] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur3e/visual/wrist1.dae\n'}
+[45.475249] (-) TimerEvent: {}
+[45.485639] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur3e/visual/wrist2.dae\n'}
+[45.570661] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur3e/visual/wrist3.dae\n'}
+[45.575521] (-) TimerEvent: {}
+[45.674090] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur5/collision/base.stl\n'}
+[45.676110] (-) TimerEvent: {}
+[45.757370] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur5/collision/forearm.stl\n'}
+[45.776400] (-) TimerEvent: {}
+[45.833045] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur5/collision/shoulder.stl\n'}
+[45.876556] (-) TimerEvent: {}
+[45.903229] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur5/collision/upperarm.stl\n'}
+[45.976726] (-) TimerEvent: {}
+[45.980671] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur5/collision/wrist1.stl\n'}
+[46.061492] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur5/collision/wrist2.stl\n'}
+[46.076963] (-) TimerEvent: {}
+[46.149184] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur5/collision/wrist3.stl\n'}
+[46.177177] (-) TimerEvent: {}
+[46.256417] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur5/visual/base.dae\n'}
+[46.277411] (-) TimerEvent: {}
+[46.329196] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur5/visual/forearm.dae\n'}
+[46.377660] (-) TimerEvent: {}
+[46.411250] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur5/visual/shoulder.dae\n'}
+[46.477942] (-) TimerEvent: {}
+[46.492947] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur5/visual/upperarm.dae\n'}
+[46.572970] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur5/visual/wrist1.dae\n'}
+[46.578252] (-) TimerEvent: {}
+[46.654345] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur5/visual/wrist2.dae\n'}
+[46.678511] (-) TimerEvent: {}
+[46.735958] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur5/visual/wrist3.dae\n'}
+[46.778773] (-) TimerEvent: {}
+[46.834454] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur5e/collision/base.stl\n'}
+[46.878919] (-) TimerEvent: {}
+[46.908178] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur5e/collision/forearm.stl\n'}
+[46.979179] (-) TimerEvent: {}
+[46.981651] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur5e/collision/shoulder.stl\n'}
+[47.058813] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur5e/collision/upperarm.stl\n'}
+[47.079499] (-) TimerEvent: {}
+[47.146442] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur5e/collision/wrist1.stl\n'}
+[47.179812] (-) TimerEvent: {}
+[47.228697] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur5e/collision/wrist2.stl\n'}
+[47.280070] (-) TimerEvent: {}
+[47.312722] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur5e/collision/wrist3.stl\n'}
+[47.380230] (-) TimerEvent: {}
+[47.413788] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur5e/visual/base.dae\n'}
+[47.480400] (-) TimerEvent: {}
+[47.498441] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur5e/visual/forearm.dae\n'}
+[47.580615] (-) TimerEvent: {}
+[47.592429] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur5e/visual/shoulder.dae\n'}
+[47.676338] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur5e/visual/upperarm.dae\n'}
+[47.680863] (-) TimerEvent: {}
+[47.764940] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur5e/visual/wrist1.dae\n'}
+[47.781089] (-) TimerEvent: {}
+[47.854856] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur5e/visual/wrist2.dae\n'}
+[47.881296] (-) TimerEvent: {}
+[47.938504] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur5e/visual/wrist3.dae\n'}
+[47.981530] (-) TimerEvent: {}
+[48.037418] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur8long/LICENSE.txt\n'}
+[48.081883] (-) TimerEvent: {}
+[48.154869] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur8long/collision/forearm.stl\n'}
+[48.182141] (-) TimerEvent: {}
+[48.245499] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur8long/collision/upperarm.stl\n'}
+[48.282341] (-) TimerEvent: {}
+[48.355503] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur8long/visual/UR8Long_DIFF_8bit_2K.jpg\n'}
+[48.382598] (-) TimerEvent: {}
+[48.434942] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur8long/visual/forearm.dae\n'}
+[48.482891] (-) TimerEvent: {}
+[48.525091] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/meshes/ur8long/visual/upperarm.dae\n'}
+[48.583160] (-) TimerEvent: {}
+[48.651409] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/rviz/view_robot.rviz\n'}
+[48.683403] (-) TimerEvent: {}
+[48.784127] (-) TimerEvent: {}
+[48.818771] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/urdf/inc/ur_common.xacro\n'}
+[48.884282] (-) TimerEvent: {}
+[48.890770] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/urdf/inc/ur_joint_control.xacro\n'}
+[48.957241] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/urdf/inc/ur_sensors.xacro\n'}
+[48.984462] (-) TimerEvent: {}
+[49.025797] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/urdf/inc/ur_transmissions.xacro\n'}
+[49.084675] (-) TimerEvent: {}
+[49.090710] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/urdf/ros2_control_mock_hardware.xacro\n'}
+[49.165219] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/urdf/ur.urdf.xacro\n'}
+[49.185005] (-) TimerEvent: {}
+[49.229039] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/urdf/ur_macro.xacro\n'}
+[49.285183] (-) TimerEvent: {}
+[49.300005] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/urdf/ur_mocked.urdf.xacro\n'}
+[49.385420] (-) TimerEvent: {}
+[49.393809] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/test/test_ur_urdf_xacro.py\n'}
+[49.462523] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/test/test_view_ur_launch.py\n'}
+[49.485675] (-) TimerEvent: {}
+[49.573243] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ament_index/resource_index/package_run_dependencies/ur_description\n'}
+[49.585949] (-) TimerEvent: {}
+[49.687064] (-) TimerEvent: {}
+[49.768639] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ament_index/resource_index/parent_prefix_path/ur_description\n'}
+[49.788995] (-) TimerEvent: {}
+[49.879703] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/environment/ament_prefix_path.sh\n'}
+[49.889227] (-) TimerEvent: {}
+[49.935817] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/environment/ament_prefix_path.dsv\n'}
+[49.989390] (-) TimerEvent: {}
+[49.999593] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/environment/path.sh\n'}
+[50.058331] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/environment/path.dsv\n'}
+[50.089633] (-) TimerEvent: {}
+[50.121921] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/local_setup.bash\n'}
+[50.183098] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/local_setup.sh\n'}
+[50.189921] (-) TimerEvent: {}
+[50.245133] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/local_setup.zsh\n'}
+[50.290229] (-) TimerEvent: {}
+[50.306647] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/local_setup.dsv\n'}
+[50.372237] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/package.dsv\n'}
+[50.390443] (-) TimerEvent: {}
+[50.463839] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ament_index/resource_index/packages/ur_description\n'}
+[50.490789] (-) TimerEvent: {}
+[50.557330] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/cmake/ur_descriptionConfig.cmake\n'}
+[50.590975] (-) TimerEvent: {}
+[50.628149] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/cmake/ur_descriptionConfig-version.cmake\n'}
+[50.691207] (-) TimerEvent: {}
+[50.701016] (ur_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/ur_description/share/ur_description/package.xml\n'}
+[50.767191] (ur_description) CommandEnded: {'returncode': 0}
+[50.791501] (-) TimerEvent: {}
+[50.892465] (-) TimerEvent: {}
+[50.993425] (-) TimerEvent: {}
+[51.094462] (-) TimerEvent: {}
+[51.194986] (-) TimerEvent: {}
+[51.295767] (-) TimerEvent: {}
+[51.396510] (-) TimerEvent: {}
+[51.497048] (-) TimerEvent: {}
+[51.597618] (-) TimerEvent: {}
+[51.698277] (-) TimerEvent: {}
+[51.799317] (-) TimerEvent: {}
+[51.891350] (ur_description) JobEnded: {'identifier': 'ur_description', 'rc': 0}
+[51.908613] (-) TimerEvent: {}
+[52.009175] (-) TimerEvent: {}
+[52.109805] (-) TimerEvent: {}
+[52.212423] (-) TimerEvent: {}
+[52.313282] (-) TimerEvent: {}
+[52.413902] (-) TimerEvent: {}
+[52.514515] (-) TimerEvent: {}
+[52.615544] (-) TimerEvent: {}
+[52.716510] (-) TimerEvent: {}
+[52.817455] (-) TimerEvent: {}
+[52.918217] (-) TimerEvent: {}
+[53.019174] (-) TimerEvent: {}
+[53.119802] (-) TimerEvent: {}
+[53.220579] (-) TimerEvent: {}
+[53.321246] (-) TimerEvent: {}
+[53.421850] (-) TimerEvent: {}
+[53.522439] (-) TimerEvent: {}
+[53.623052] (-) TimerEvent: {}
+[53.723650] (-) TimerEvent: {}
+[53.824452] (-) TimerEvent: {}
+[53.925131] (-) TimerEvent: {}
+[54.025730] (-) TimerEvent: {}
+[54.128155] (-) TimerEvent: {}
+[54.228926] (-) TimerEvent: {}
+[54.329744] (-) TimerEvent: {}
+[54.430653] (-) TimerEvent: {}
+[54.531385] (-) TimerEvent: {}
+[54.632557] (-) TimerEvent: {}
+[54.733457] (-) TimerEvent: {}
+[54.834029] (-) TimerEvent: {}
+[54.934662] (-) TimerEvent: {}
+[55.035261] (-) TimerEvent: {}
+[55.138220] (-) TimerEvent: {}
+[55.238985] (-) TimerEvent: {}
+[55.341066] (-) TimerEvent: {}
+[55.441882] (-) TimerEvent: {}
+[55.542620] (-) TimerEvent: {}
+[55.643427] (-) TimerEvent: {}
+[55.744148] (-) TimerEvent: {}
+[55.845208] (-) TimerEvent: {}
+[55.946765] (-) TimerEvent: {}
+[56.047695] (-) TimerEvent: {}
+[56.148334] (-) TimerEvent: {}
+[56.249027] (-) TimerEvent: {}
+[56.349628] (-) TimerEvent: {}
+[56.450264] (-) TimerEvent: {}
+[56.551305] (-) TimerEvent: {}
+[56.652416] (-) TimerEvent: {}
+[56.753187] (-) TimerEvent: {}
+[56.854175] (-) TimerEvent: {}
+[56.954812] (-) TimerEvent: {}
+[57.055501] (-) TimerEvent: {}
+[57.155976] (-) TimerEvent: {}
+[57.256503] (-) TimerEvent: {}
+[57.357024] (-) TimerEvent: {}
+[57.457675] (-) TimerEvent: {}
+[57.558394] (-) TimerEvent: {}
+[57.659108] (-) TimerEvent: {}
+[57.759969] (-) TimerEvent: {}
+[57.860790] (-) TimerEvent: {}
+[57.961353] (-) TimerEvent: {}
+[58.062002] (-) TimerEvent: {}
+[58.162843] (-) TimerEvent: {}
+[58.263422] (-) TimerEvent: {}
+[58.363964] (-) TimerEvent: {}
+[58.464695] (-) TimerEvent: {}
+[58.565553] (-) TimerEvent: {}
+[58.666498] (-) TimerEvent: {}
+[58.767338] (-) TimerEvent: {}
+[58.870526] (-) TimerEvent: {}
+[58.971667] (-) TimerEvent: {}
+[59.072984] (-) TimerEvent: {}
+[59.173885] (-) TimerEvent: {}
+[59.274607] (-) TimerEvent: {}
+[59.375167] (-) TimerEvent: {}
+[59.475902] (-) TimerEvent: {}
+[59.576657] (-) TimerEvent: {}
+[59.677547] (-) TimerEvent: {}
+[59.784544] (-) TimerEvent: {}
+[59.885303] (-) TimerEvent: {}
+[59.985939] (-) TimerEvent: {}
+[60.086758] (-) TimerEvent: {}
+[60.187679] (-) TimerEvent: {}
+[60.288544] (-) TimerEvent: {}
+[60.389404] (-) TimerEvent: {}
+[60.490360] (-) TimerEvent: {}
+[60.591144] (-) TimerEvent: {}
+[60.691814] (-) TimerEvent: {}
+[60.792501] (-) TimerEvent: {}
+[60.893444] (-) TimerEvent: {}
+[60.996769] (-) TimerEvent: {}
+[61.097680] (-) TimerEvent: {}
+[61.198634] (-) TimerEvent: {}
+[61.299336] (-) TimerEvent: {}
+[61.399885] (-) TimerEvent: {}
+[61.500674] (-) TimerEvent: {}
+[61.601286] (-) TimerEvent: {}
+[61.702100] (-) TimerEvent: {}
+[61.802695] (-) TimerEvent: {}
+[61.903313] (-) TimerEvent: {}
+[62.004143] (-) TimerEvent: {}
+[62.104749] (-) TimerEvent: {}
+[62.205403] (-) TimerEvent: {}
+[62.306435] (-) TimerEvent: {}
+[62.407100] (-) TimerEvent: {}
+[62.507834] (-) TimerEvent: {}
+[62.608446] (-) TimerEvent: {}
+[62.709208] (-) TimerEvent: {}
+[62.810202] (-) TimerEvent: {}
+[62.911047] (-) TimerEvent: {}
+[63.013195] (-) TimerEvent: {}
+[63.114035] (-) TimerEvent: {}
+[63.214789] (-) TimerEvent: {}
+[63.315498] (-) TimerEvent: {}
+[63.417641] (-) TimerEvent: {}
+[63.518487] (-) TimerEvent: {}
+[63.619464] (-) TimerEvent: {}
+[63.720160] (-) TimerEvent: {}
+[63.820849] (-) TimerEvent: {}
+[63.921511] (-) TimerEvent: {}
+[64.022216] (-) TimerEvent: {}
+[64.123097] (-) TimerEvent: {}
+[64.224214] (-) TimerEvent: {}
+[64.325001] (-) TimerEvent: {}
+[64.425630] (-) TimerEvent: {}
+[64.526355] (-) TimerEvent: {}
+[64.627099] (-) TimerEvent: {}
+[64.727686] (-) TimerEvent: {}
+[64.828374] (-) TimerEvent: {}
+[64.929036] (-) TimerEvent: {}
+[65.029633] (-) TimerEvent: {}
+[65.130332] (-) TimerEvent: {}
+[65.230932] (-) TimerEvent: {}
+[65.331436] (-) TimerEvent: {}
+[65.432197] (-) TimerEvent: {}
+[65.532809] (-) TimerEvent: {}
+[65.633590] (-) TimerEvent: {}
+[65.734308] (-) TimerEvent: {}
+[65.834949] (-) TimerEvent: {}
+[65.935761] (-) TimerEvent: {}
+[66.036965] (-) TimerEvent: {}
+[66.137777] (-) TimerEvent: {}
+[66.238756] (-) TimerEvent: {}
+[66.340055] (-) TimerEvent: {}
+[66.440665] (-) TimerEvent: {}
+[66.541402] (-) TimerEvent: {}
+[66.642635] (-) TimerEvent: {}
+[66.743348] (-) TimerEvent: {}
+[66.843964] (-) TimerEvent: {}
+[66.944538] (-) TimerEvent: {}
+[67.045490] (-) TimerEvent: {}
+[67.146513] (-) TimerEvent: {}
+[67.247194] (-) TimerEvent: {}
+[67.347770] (-) TimerEvent: {}
+[67.448495] (-) TimerEvent: {}
+[67.549062] (-) TimerEvent: {}
+[67.652204] (-) TimerEvent: {}
+[67.752754] (-) TimerEvent: {}
+[67.853274] (-) TimerEvent: {}
+[67.953946] (-) TimerEvent: {}
+[68.054649] (-) TimerEvent: {}
+[68.155363] (-) TimerEvent: {}
+[68.256335] (-) TimerEvent: {}
+[68.360237] (-) TimerEvent: {}
+[68.463828] (-) TimerEvent: {}
+[68.564286] (-) TimerEvent: {}
+[68.665031] (-) TimerEvent: {}
+[68.765638] (-) TimerEvent: {}
+[68.866149] (-) TimerEvent: {}
+[68.966651] (-) TimerEvent: {}
+[69.067296] (-) TimerEvent: {}
+[69.167854] (-) TimerEvent: {}
+[69.268442] (-) TimerEvent: {}
+[69.369049] (-) TimerEvent: {}
+[69.469529] (-) TimerEvent: {}
+[69.569974] (-) TimerEvent: {}
+[69.670598] (-) TimerEvent: {}
+[69.771384] (-) TimerEvent: {}
+[69.872124] (-) TimerEvent: {}
+[69.972755] (-) TimerEvent: {}
+[70.073450] (-) TimerEvent: {}
+[70.175202] (-) TimerEvent: {}
+[70.276973] (-) TimerEvent: {}
+[70.378568] (-) TimerEvent: {}
+[70.479346] (-) TimerEvent: {}
+[70.579854] (-) TimerEvent: {}
+[70.680554] (-) TimerEvent: {}
+[70.781223] (-) TimerEvent: {}
+[70.881889] (-) TimerEvent: {}
+[70.982368] (-) TimerEvent: {}
+[71.083028] (-) TimerEvent: {}
+[71.183804] (-) TimerEvent: {}
+[71.284467] (-) TimerEvent: {}
+[71.385055] (-) TimerEvent: {}
+[71.485798] (-) TimerEvent: {}
+[71.586530] (-) TimerEvent: {}
+[71.687102] (-) TimerEvent: {}
+[71.787696] (-) TimerEvent: {}
+[71.888318] (-) TimerEvent: {}
+[71.988919] (-) TimerEvent: {}
+[72.089616] (-) TimerEvent: {}
+[72.190182] (-) TimerEvent: {}
+[72.290796] (-) TimerEvent: {}
+[72.391786] (-) TimerEvent: {}
+[72.492425] (-) TimerEvent: {}
+[72.592953] (-) TimerEvent: {}
+[72.693569] (-) TimerEvent: {}
+[72.794294] (-) TimerEvent: {}
+[72.894907] (-) TimerEvent: {}
+[72.995547] (-) TimerEvent: {}
+[73.096179] (-) TimerEvent: {}
+[73.196727] (-) TimerEvent: {}
+[73.297476] (-) TimerEvent: {}
+[73.398238] (-) TimerEvent: {}
+[73.498938] (-) TimerEvent: {}
+[73.599638] (-) TimerEvent: {}
+[73.700173] (-) TimerEvent: {}
+[73.800907] (-) TimerEvent: {}
+[73.901639] (-) TimerEvent: {}
+[74.002601] (-) TimerEvent: {}
+[74.103534] (-) TimerEvent: {}
+[74.204483] (-) TimerEvent: {}
+[74.305506] (-) TimerEvent: {}
+[74.307404] (franka_description) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[74.309680] (franka_description) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[74.405757] (-) TimerEvent: {}
+[74.506584] (-) TimerEvent: {}
+[74.607269] (-) TimerEvent: {}
+[74.707751] (-) TimerEvent: {}
+[74.808494] (-) TimerEvent: {}
+[74.909640] (-) TimerEvent: {}
+[75.010902] (-) TimerEvent: {}
+[75.111694] (-) TimerEvent: {}
+[75.212327] (-) TimerEvent: {}
+[75.312995] (-) TimerEvent: {}
+[75.413483] (-) TimerEvent: {}
+[75.514015] (-) TimerEvent: {}
+[75.614666] (-) TimerEvent: {}
+[75.715228] (-) TimerEvent: {}
+[75.815834] (-) TimerEvent: {}
+[75.916415] (-) TimerEvent: {}
+[76.017108] (-) TimerEvent: {}
+[76.117990] (-) TimerEvent: {}
+[76.219018] (-) TimerEvent: {}
+[76.319755] (-) TimerEvent: {}
+[76.420323] (-) TimerEvent: {}
+[76.521014] (-) TimerEvent: {}
+[76.621703] (-) TimerEvent: {}
+[76.722288] (-) TimerEvent: {}
+[76.823395] (-) TimerEvent: {}
+[76.924369] (-) TimerEvent: {}
+[77.025170] (-) TimerEvent: {}
+[77.125726] (-) TimerEvent: {}
+[77.226202] (-) TimerEvent: {}
+[77.326886] (-) TimerEvent: {}
+[77.427425] (-) TimerEvent: {}
+[77.528130] (-) TimerEvent: {}
+[77.628831] (-) TimerEvent: {}
+[77.729445] (-) TimerEvent: {}
+[77.829883] (-) TimerEvent: {}
+[77.930451] (-) TimerEvent: {}
+[78.031009] (-) TimerEvent: {}
+[78.131615] (-) TimerEvent: {}
+[78.232397] (-) TimerEvent: {}
+[78.333227] (-) TimerEvent: {}
+[78.434149] (-) TimerEvent: {}
+[78.534988] (-) TimerEvent: {}
+[78.636091] (-) TimerEvent: {}
+[78.736855] (-) TimerEvent: {}
+[78.837517] (-) TimerEvent: {}
+[78.938147] (-) TimerEvent: {}
+[79.038917] (-) TimerEvent: {}
+[79.139555] (-) TimerEvent: {}
+[79.240181] (-) TimerEvent: {}
+[79.340683] (-) TimerEvent: {}
+[79.415052] (franka_description) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[79.440881] (-) TimerEvent: {}
+[79.541521] (-) TimerEvent: {}
+[79.642100] (-) TimerEvent: {}
+[79.742697] (-) TimerEvent: {}
+[79.843341] (-) TimerEvent: {}
+[79.943903] (-) TimerEvent: {}
+[80.044520] (-) TimerEvent: {}
+[80.145155] (-) TimerEvent: {}
+[80.246132] (-) TimerEvent: {}
+[80.348493] (-) TimerEvent: {}
+[80.449833] (-) TimerEvent: {}
+[80.551207] (-) TimerEvent: {}
+[80.652024] (-) TimerEvent: {}
+[80.752770] (-) TimerEvent: {}
+[80.853271] (-) TimerEvent: {}
+[80.953924] (-) TimerEvent: {}
+[81.054705] (-) TimerEvent: {}
+[81.155296] (-) TimerEvent: {}
+[81.256533] (-) TimerEvent: {}
+[81.357968] (-) TimerEvent: {}
+[81.459620] (-) TimerEvent: {}
+[81.561609] (-) TimerEvent: {}
+[81.663337] (-) TimerEvent: {}
+[81.764104] (-) TimerEvent: {}
+[81.865041] (-) TimerEvent: {}
+[81.965713] (-) TimerEvent: {}
+[82.066327] (-) TimerEvent: {}
+[82.152821] (franka_description) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[82.166537] (-) TimerEvent: {}
+[82.267115] (-) TimerEvent: {}
+[82.367664] (-) TimerEvent: {}
+[82.468343] (-) TimerEvent: {}
+[82.568944] (-) TimerEvent: {}
+[82.669831] (-) TimerEvent: {}
+[82.770343] (-) TimerEvent: {}
+[82.870927] (-) TimerEvent: {}
+[82.971517] (-) TimerEvent: {}
+[83.072351] (-) TimerEvent: {}
+[83.172977] (-) TimerEvent: {}
+[83.273627] (-) TimerEvent: {}
+[83.374328] (-) TimerEvent: {}
+[83.475035] (-) TimerEvent: {}
+[83.576122] (-) TimerEvent: {}
+[83.677402] (-) TimerEvent: {}
+[83.778762] (-) TimerEvent: {}
+[83.879361] (-) TimerEvent: {}
+[83.979967] (-) TimerEvent: {}
+[84.081619] (-) TimerEvent: {}
+[84.182266] (-) TimerEvent: {}
+[84.282851] (-) TimerEvent: {}
+[84.383603] (-) TimerEvent: {}
+[84.484629] (-) TimerEvent: {}
+[84.585368] (-) TimerEvent: {}
+[84.686273] (-) TimerEvent: {}
+[84.786940] (-) TimerEvent: {}
+[84.887577] (-) TimerEvent: {}
+[84.988124] (-) TimerEvent: {}
+[85.088653] (-) TimerEvent: {}
+[85.189246] (-) TimerEvent: {}
+[85.289758] (-) TimerEvent: {}
+[85.390778] (-) TimerEvent: {}
+[85.491533] (-) TimerEvent: {}
+[85.592451] (-) TimerEvent: {}
+[85.693191] (-) TimerEvent: {}
+[85.793790] (-) TimerEvent: {}
+[85.894496] (-) TimerEvent: {}
+[85.995114] (-) TimerEvent: {}
+[86.095745] (-) TimerEvent: {}
+[86.196460] (-) TimerEvent: {}
+[86.297495] (-) TimerEvent: {}
+[86.398508] (-) TimerEvent: {}
+[86.499220] (-) TimerEvent: {}
+[86.600086] (-) TimerEvent: {}
+[86.700748] (-) TimerEvent: {}
+[86.801185] (-) TimerEvent: {}
+[86.901698] (-) TimerEvent: {}
+[87.002175] (-) TimerEvent: {}
+[87.102954] (-) TimerEvent: {}
+[87.203688] (-) TimerEvent: {}
+[87.304359] (-) TimerEvent: {}
+[87.405522] (-) TimerEvent: {}
+[87.506077] (-) TimerEvent: {}
+[87.606805] (-) TimerEvent: {}
+[87.707445] (-) TimerEvent: {}
+[87.808214] (-) TimerEvent: {}
+[87.908998] (-) TimerEvent: {}
+[88.009641] (-) TimerEvent: {}
+[88.110120] (-) TimerEvent: {}
+[88.210775] (-) TimerEvent: {}
+[88.311778] (-) TimerEvent: {}
+[88.412673] (-) TimerEvent: {}
+[88.513542] (-) TimerEvent: {}
+[88.614173] (-) TimerEvent: {}
+[88.715528] (-) TimerEvent: {}
+[88.816204] (-) TimerEvent: {}
+[88.917478] (-) TimerEvent: {}
+[89.018135] (-) TimerEvent: {}
+[89.118750] (-) TimerEvent: {}
+[89.219624] (-) TimerEvent: {}
+[89.320446] (-) TimerEvent: {}
+[89.421105] (-) TimerEvent: {}
+[89.521652] (-) TimerEvent: {}
+[89.622172] (-) TimerEvent: {}
+[89.722952] (-) TimerEvent: {}
+[89.823597] (-) TimerEvent: {}
+[89.924201] (-) TimerEvent: {}
+[90.024681] (-) TimerEvent: {}
+[90.125265] (-) TimerEvent: {}
+[90.225941] (-) TimerEvent: {}
+[90.326857] (-) TimerEvent: {}
+[90.427699] (-) TimerEvent: {}
+[90.528452] (-) TimerEvent: {}
+[90.629229] (-) TimerEvent: {}
+[90.730081] (-) TimerEvent: {}
+[90.830941] (-) TimerEvent: {}
+[90.936524] (-) TimerEvent: {}
+[91.037230] (-) TimerEvent: {}
+[91.137800] (-) TimerEvent: {}
+[91.238705] (-) TimerEvent: {}
+[91.339349] (-) TimerEvent: {}
+[91.440185] (-) TimerEvent: {}
+[91.540984] (-) TimerEvent: {}
+[91.641976] (-) TimerEvent: {}
+[91.742787] (-) TimerEvent: {}
+[91.843615] (-) TimerEvent: {}
+[91.944435] (-) TimerEvent: {}
+[92.044928] (-) TimerEvent: {}
+[92.145417] (-) TimerEvent: {}
+[92.246349] (-) TimerEvent: {}
+[92.349768] (-) TimerEvent: {}
+[92.451666] (-) TimerEvent: {}
+[92.553818] (-) TimerEvent: {}
+[92.654400] (-) TimerEvent: {}
+[92.755509] (-) TimerEvent: {}
+[92.857463] (-) TimerEvent: {}
+[92.960926] (-) TimerEvent: {}
+[93.061607] (-) TimerEvent: {}
+[93.162306] (-) TimerEvent: {}
+[93.263060] (-) TimerEvent: {}
+[93.363654] (-) TimerEvent: {}
+[93.464384] (-) TimerEvent: {}
+[93.565150] (-) TimerEvent: {}
+[93.665906] (-) TimerEvent: {}
+[93.766780] (-) TimerEvent: {}
+[93.867606] (-) TimerEvent: {}
+[93.968218] (-) TimerEvent: {}
+[94.068949] (-) TimerEvent: {}
+[94.169726] (-) TimerEvent: {}
+[94.270442] (-) TimerEvent: {}
+[94.371054] (-) TimerEvent: {}
+[94.471661] (-) TimerEvent: {}
+[94.572349] (-) TimerEvent: {}
+[94.674326] (-) TimerEvent: {}
+[94.775032] (-) TimerEvent: {}
+[94.877634] (-) TimerEvent: {}
+[94.979114] (-) TimerEvent: {}
+[95.079865] (-) TimerEvent: {}
+[95.180944] (-) TimerEvent: {}
+[95.286438] (-) TimerEvent: {}
+[95.387053] (-) TimerEvent: {}
+[95.487741] (-) TimerEvent: {}
+[95.588588] (-) TimerEvent: {}
+[95.689361] (-) TimerEvent: {}
+[95.790060] (-) TimerEvent: {}
+[95.890825] (-) TimerEvent: {}
+[95.991385] (-) TimerEvent: {}
+[96.092179] (-) TimerEvent: {}
+[96.192734] (-) TimerEvent: {}
+[96.294972] (-) TimerEvent: {}
+[96.395892] (-) TimerEvent: {}
+[96.496955] (-) TimerEvent: {}
+[96.598198] (-) TimerEvent: {}
+[96.698802] (-) TimerEvent: {}
+[96.799942] (-) TimerEvent: {}
+[96.900453] (-) TimerEvent: {}
+[97.001034] (-) TimerEvent: {}
+[97.101699] (-) TimerEvent: {}
+[97.202344] (-) TimerEvent: {}
+[97.302924] (-) TimerEvent: {}
+[97.403509] (-) TimerEvent: {}
+[97.504354] (-) TimerEvent: {}
+[97.604907] (-) TimerEvent: {}
+[97.705398] (-) TimerEvent: {}
+[97.805956] (-) TimerEvent: {}
+[97.906472] (-) TimerEvent: {}
+[98.007164] (-) TimerEvent: {}
+[98.107798] (-) TimerEvent: {}
+[98.208323] (-) TimerEvent: {}
+[98.308911] (-) TimerEvent: {}
+[98.409585] (-) TimerEvent: {}
+[98.510071] (-) TimerEvent: {}
+[98.610661] (-) TimerEvent: {}
+[98.711280] (-) TimerEvent: {}
+[98.812213] (-) TimerEvent: {}
+[98.912999] (-) TimerEvent: {}
+[99.013775] (-) TimerEvent: {}
+[99.114435] (-) TimerEvent: {}
+[99.215394] (-) TimerEvent: {}
+[99.316155] (-) TimerEvent: {}
+[99.416774] (-) TimerEvent: {}
+[99.517432] (-) TimerEvent: {}
+[99.618026] (-) TimerEvent: {}
+[99.718609] (-) TimerEvent: {}
+[99.819337] (-) TimerEvent: {}
+[99.919968] (-) TimerEvent: {}
+[100.020514] (-) TimerEvent: {}
+[100.121035] (-) TimerEvent: {}
+[100.221598] (-) TimerEvent: {}
+[100.322281] (-) TimerEvent: {}
+[100.422818] (-) TimerEvent: {}
+[100.523503] (-) TimerEvent: {}
+[100.624315] (-) TimerEvent: {}
+[100.745148] (-) TimerEvent: {}
+[100.845757] (-) TimerEvent: {}
+[100.946479] (-) TimerEvent: {}
+[101.048217] (-) TimerEvent: {}
+[101.149008] (-) TimerEvent: {}
+[101.249763] (-) TimerEvent: {}
+[101.350442] (-) TimerEvent: {}
+[101.451120] (-) TimerEvent: {}
+[101.551748] (-) TimerEvent: {}
+[101.653226] (-) TimerEvent: {}
+[101.754247] (-) TimerEvent: {}
+[101.854974] (-) TimerEvent: {}
+[101.955648] (-) TimerEvent: {}
+[102.056332] (-) TimerEvent: {}
+[102.156845] (-) TimerEvent: {}
+[102.257496] (-) TimerEvent: {}
+[102.357993] (-) TimerEvent: {}
+[102.458848] (-) TimerEvent: {}
+[102.560373] (-) TimerEvent: {}
+[102.661084] (-) TimerEvent: {}
+[102.762680] (-) TimerEvent: {}
+[102.863489] (-) TimerEvent: {}
+[102.968955] (-) TimerEvent: {}
+[103.069508] (-) TimerEvent: {}
+[103.174795] (-) TimerEvent: {}
+[103.286890] (-) TimerEvent: {}
+[103.387387] (-) TimerEvent: {}
+[103.488210] (-) TimerEvent: {}
+[103.589234] (-) TimerEvent: {}
+[103.690164] (-) TimerEvent: {}
+[103.790861] (-) TimerEvent: {}
+[103.891639] (-) TimerEvent: {}
+[103.992580] (-) TimerEvent: {}
+[104.093228] (-) TimerEvent: {}
+[104.193775] (-) TimerEvent: {}
+[104.294727] (-) TimerEvent: {}
+[104.395566] (-) TimerEvent: {}
+[104.496190] (-) TimerEvent: {}
+[104.596958] (-) TimerEvent: {}
+[104.697732] (-) TimerEvent: {}
+[104.798538] (-) TimerEvent: {}
+[104.899261] (-) TimerEvent: {}
+[105.000422] (-) TimerEvent: {}
+[105.101240] (-) TimerEvent: {}
+[105.201831] (-) TimerEvent: {}
+[105.302606] (-) TimerEvent: {}
+[105.403170] (-) TimerEvent: {}
+[105.503935] (-) TimerEvent: {}
+[105.604495] (-) TimerEvent: {}
+[105.706944] (-) TimerEvent: {}
+[105.807534] (-) TimerEvent: {}
+[105.908303] (-) TimerEvent: {}
+[106.009197] (-) TimerEvent: {}
+[106.109858] (-) TimerEvent: {}
+[106.210869] (-) TimerEvent: {}
+[106.311803] (-) TimerEvent: {}
+[106.345658] (franka_description) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[106.412185] (-) TimerEvent: {}
+[106.514134] (-) TimerEvent: {}
+[106.618406] (-) TimerEvent: {}
+[106.686589] (franka_description) StdoutLine: {'line': b'-- Configuring done (106.0s)\n'}
+[106.718993] (-) TimerEvent: {}
+[106.819686] (-) TimerEvent: {}
+[106.920644] (-) TimerEvent: {}
+[107.021495] (-) TimerEvent: {}
+[107.122388] (-) TimerEvent: {}
+[107.196928] (franka_description) StdoutLine: {'line': b'-- Generating done (0.4s)\n'}
+[107.222612] (-) TimerEvent: {}
+[107.323543] (-) TimerEvent: {}
+[107.424117] (-) TimerEvent: {}
+[107.473102] (franka_description) StdoutLine: {'line': b'-- Build files have been written to: /workspaces/factory50_ws/build/franka_description\n'}
+[107.503757] (franka_description) CommandEnded: {'returncode': 0}
+[107.511591] (franka_description) JobProgress: {'identifier': 'franka_description', 'progress': 'build'}
+[107.516993] (franka_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/factory50_ws/build/franka_description', '--', '-j4', '-l4'], 'cwd': '/workspaces/factory50_ws/build/franka_description', 'env': OrderedDict({'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'docker-desktop', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/workspaces/factory50_ws', 'ROS_PYTHON_VERSION': '3', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-90dde2c9-e600-4bea-babe-d3ebfa4a6923.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'graphics,utility,compute', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': '1', 'LANG': 'C.UTF-8', 'LS_COLORS': '', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'dialog', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspaces/factory50_ws/build/franka_description', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[107.524343] (-) TimerEvent: {}
+[107.625249] (-) TimerEvent: {}
+[107.725789] (-) TimerEvent: {}
+[107.730543] (franka_description) CommandEnded: {'returncode': 0}
+[107.757253] (franka_description) JobProgress: {'identifier': 'franka_description', 'progress': 'install'}
+[107.763627] (franka_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/factory50_ws/build/franka_description'], 'cwd': '/workspaces/factory50_ws/build/franka_description', 'env': OrderedDict({'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': 'docker-desktop', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/workspaces/factory50_ws', 'ROS_PYTHON_VERSION': '3', 'REMOTE_CONTAINERS': 'true', 'ROS_DISTRO': 'jazzy', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-90dde2c9-e600-4bea-babe-d3ebfa4a6923.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'graphics,utility,compute', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': '1', 'LANG': 'C.UTF-8', 'LS_COLORS': '', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'dialog', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspaces/factory50_ws/build/franka_description', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[107.791441] (franka_description) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[107.806814] (franka_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[107.826101] (-) TimerEvent: {}
+[107.869779] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//launch/visualize_franka.launch.py\n'}
+[107.926482] (-) TimerEvent: {}
+[107.940428] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//launch/visualize_franka_duo.launch.py\n'}
+[108.026790] (-) TimerEvent: {}
+[108.127609] (-) TimerEvent: {}
+[108.228322] (-) TimerEvent: {}
+[108.329005] (-) TimerEvent: {}
+[108.429621] (-) TimerEvent: {}
+[108.530576] (-) TimerEvent: {}
+[108.581521] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/common/franka_arm.ros2_control.xacro\n'}
+[108.630845] (-) TimerEvent: {}
+[108.648981] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/common/franka_arm.srdf.xacro\n'}
+[108.720367] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/common/franka_arm.xacro\n'}
+[108.731183] (-) TimerEvent: {}
+[108.792977] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/common/franka_robot.xacro\n'}
+[108.831494] (-) TimerEvent: {}
+[108.869849] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/common/group_definition.xacro\n'}
+[108.931767] (-) TimerEvent: {}
+[108.941374] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/common/utils.xacro\n'}
+[109.032341] (-) TimerEvent: {}
+[109.043041] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fer/dynamics.yaml\n'}
+[109.114780] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fer/fer.srdf.xacro\n'}
+[109.132693] (-) TimerEvent: {}
+[109.189962] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fer/fer.urdf.xacro\n'}
+[109.232903] (-) TimerEvent: {}
+[109.257116] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fer/inertials.yaml\n'}
+[109.329533] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fer/joint_limits.yaml\n'}
+[109.333099] (-) TimerEvent: {}
+[109.404583] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fer/kinematics.yaml\n'}
+[109.433431] (-) TimerEvent: {}
+[109.491608] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fp3/accelerometers.yaml\n'}
+[109.533667] (-) TimerEvent: {}
+[109.554919] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fp3/dynamics.yaml\n'}
+[109.615328] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fp3/fp3.srdf.xacro\n'}
+[109.633862] (-) TimerEvent: {}
+[109.678539] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fp3/fp3.urdf.xacro\n'}
+[109.734303] (-) TimerEvent: {}
+[109.754615] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fp3/inertials.yaml\n'}
+[109.823443] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fp3/joint_limits.yaml\n'}
+[109.834503] (-) TimerEvent: {}
+[109.898171] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fp3/kinematics.yaml\n'}
+[109.934748] (-) TimerEvent: {}
+[109.991753] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3/accelerometers.yaml\n'}
+[110.035028] (-) TimerEvent: {}
+[110.064664] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3/dynamics.yaml\n'}
+[110.135315] (-) TimerEvent: {}
+[110.140658] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3/fr3.srdf.xacro\n'}
+[110.214681] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3/fr3.urdf.xacro\n'}
+[110.235731] (-) TimerEvent: {}
+[110.287981] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3/inertials.yaml\n'}
+[110.336212] (-) TimerEvent: {}
+[110.355956] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3/joint_limits.yaml\n'}
+[110.424383] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3/kinematics.yaml\n'}
+[110.436369] (-) TimerEvent: {}
+[110.512843] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3_duo/fr3_duo.srdf.xacro\n'}
+[110.536543] (-) TimerEvent: {}
+[110.574655] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3_duo/fr3_duo.urdf.xacro\n'}
+[110.636769] (-) TimerEvent: {}
+[110.637627] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3_duo/fr3_duo_arm.urdf.xacro\n'}
+[110.699519] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3_duo/fr3_duo_fixed_structure.urdf.xacro\n'}
+[110.737159] (-) TimerEvent: {}
+[110.769898] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3_duo/fr3_duo_head.xacro\n'}
+[110.837371] (-) TimerEvent: {}
+[110.869900] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3_duo/fr3_duo_mount/fr3_duo_mount.xacro\n'}
+[110.937629] (-) TimerEvent: {}
+[110.954950] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3_duo/fr3_duo_mount/inertials.yaml\n'}
+[111.032574] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3_duo/fr3_duo_mount/kinematics.yaml\n'}
+[111.038040] (-) TimerEvent: {}
+[111.135463] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3v2/accelerometers.yaml\n'}
+[111.138141] (-) TimerEvent: {}
+[111.219738] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3v2/dynamics.yaml\n'}
+[111.238437] (-) TimerEvent: {}
+[111.339278] (-) TimerEvent: {}
+[111.377536] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3v2/fr3v2.srdf.xacro\n'}
+[111.440497] (-) TimerEvent: {}
+[111.531804] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3v2/fr3v2.urdf.xacro\n'}
+[111.540683] (-) TimerEvent: {}
+[111.635857] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3v2/inertials.yaml\n'}
+[111.640925] (-) TimerEvent: {}
+[111.697753] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3v2/joint_limits.yaml\n'}
+[111.741154] (-) TimerEvent: {}
+[111.762124] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3v2/kinematics.yaml\n'}
+[111.841367] (-) TimerEvent: {}
+[111.850077] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3v2_1/accelerometers.yaml\n'}
+[111.922454] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3v2_1/dynamics.yaml\n'}
+[111.941572] (-) TimerEvent: {}
+[111.997656] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3v2_1/fr3v2_1.srdf.xacro\n'}
+[112.041739] (-) TimerEvent: {}
+[112.070872] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3v2_1/fr3v2_1.urdf.xacro\n'}
+[112.142031] (-) TimerEvent: {}
+[112.145174] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3v2_1/inertials.yaml\n'}
+[112.217481] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3v2_1/joint_limits.yaml\n'}
+[112.242526] (-) TimerEvent: {}
+[112.285474] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3v2_1/kinematics.yaml\n'}
+[112.342898] (-) TimerEvent: {}
+[112.372634] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/mobile_fr3_duo_v0_2/mobile_fr3_duo.ros2_control.xacro\n'}
+[112.440284] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/mobile_fr3_duo_v0_2/mobile_fr3_duo_v0_2.urdf.xacro\n'}
+[112.443085] (-) TimerEvent: {}
+[112.514602] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/mobile_fr3_duo_v0_2/mobile_fr3_duo_v0_2.xacro\n'}
+[112.543318] (-) TimerEvent: {}
+[112.594376] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/tmrv0_2/argo_drive.xacro\n'}
+[112.643545] (-) TimerEvent: {}
+[112.657301] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/tmrv0_2/caster_wheel.xacro\n'}
+[112.717544] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/tmrv0_2/inertia.xacro\n'}
+[112.743863] (-) TimerEvent: {}
+[112.779163] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/tmrv0_2/rocker_arm.xacro\n'}
+[112.844092] (-) TimerEvent: {}
+[112.846163] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/tmrv0_2/tmrv0_2.ros2_control.xacro\n'}
+[112.918245] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/tmrv0_2/tmrv0_2.urdf.xacro\n'}
+[112.944359] (-) TimerEvent: {}
+[112.992619] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/tmrv0_2/tmrv0_2.xacro\n'}
+[113.044766] (-) TimerEvent: {}
+[113.146355] (-) TimerEvent: {}
+[113.214834] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//end_effectors/cobot_pump/cobot_pump.urdf.xacro\n'}
+[113.246590] (-) TimerEvent: {}
+[113.294639] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//end_effectors/cobot_pump/cobot_pump_arguments.xacro\n'}
+[113.347028] (-) TimerEvent: {}
+[113.361685] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//end_effectors/cobot_pump/inertials.yaml\n'}
+[113.447275] (-) TimerEvent: {}
+[113.451338] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//end_effectors/common/ee_with_one_link.xacro\n'}
+[113.528310] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//end_effectors/common/franka_hand.xacro\n'}
+[113.547603] (-) TimerEvent: {}
+[113.593270] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//end_effectors/common/utils.xacro\n'}
+[113.647786] (-) TimerEvent: {}
+[113.671632] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//end_effectors/franka_hand/franka_hand.srdf.xacro\n'}
+[113.731246] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//end_effectors/franka_hand/franka_hand.urdf.xacro\n'}
+[113.748412] (-) TimerEvent: {}
+[113.795614] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//end_effectors/franka_hand/franka_hand_arguments.xacro\n'}
+[113.848573] (-) TimerEvent: {}
+[113.874341] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//end_effectors/franka_hand/inertials.yaml\n'}
+[113.948967] (-) TimerEvent: {}
+[114.049822] (-) TimerEvent: {}
+[114.150440] (-) TimerEvent: {}
+[114.251325] (-) TimerEvent: {}
+[114.351930] (-) TimerEvent: {}
+[114.452457] (-) TimerEvent: {}
+[114.553794] (-) TimerEvent: {}
+[114.654559] (-) TimerEvent: {}
+[114.755258] (-) TimerEvent: {}
+[114.856204] (-) TimerEvent: {}
+[114.957467] (-) TimerEvent: {}
+[115.058423] (-) TimerEvent: {}
+[115.159017] (-) TimerEvent: {}
+[115.259597] (-) TimerEvent: {}
+[115.360326] (-) TimerEvent: {}
+[115.429410] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/accessories/fr3_duo_head/collision/fr3_duo_head.stl\n'}
+[115.460488] (-) TimerEvent: {}
+[115.549052] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/accessories/fr3_duo_head/visual/fr3_duo_head.dae\n'}
+[115.560704] (-) TimerEvent: {}
+[115.664315] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/accessories/fr3_duo_mount/collision/fr3_duo_cover.stl\n'}
+[115.665981] (-) TimerEvent: {}
+[115.740816] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/accessories/fr3_duo_mount/collision/fr3_duo_mount.stl\n'}
+[115.766235] (-) TimerEvent: {}
+[115.834735] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/accessories/fr3_duo_mount/visual/fr3_duo_cover.dae\n'}
+[115.866482] (-) TimerEvent: {}
+[115.912094] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/accessories/fr3_duo_mount/visual/fr3_duo_mount.dae\n'}
+[115.966976] (-) TimerEvent: {}
+[116.027479] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/accessories/franka_spine/collision/franka_spine.stl\n'}
+[116.067131] (-) TimerEvent: {}
+[116.135856] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/accessories/franka_spine/visual/franka_spine.dae\n'}
+[116.167394] (-) TimerEvent: {}
+[116.236251] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robot_ee/cobot_pump/collision/cobot_pump.stl\n'}
+[116.267646] (-) TimerEvent: {}
+[116.350896] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robot_ee/cobot_pump/visual/cobot_pump.dae\n'}
+[116.367860] (-) TimerEvent: {}
+[116.469603] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robot_ee/franka_hand_black/collision/hand.stl\n'}
+[116.471136] (-) TimerEvent: {}
+[116.571751] (-) TimerEvent: {}
+[116.586958] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robot_ee/franka_hand_black/visual/finger.dae\n'}
+[116.668635] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robot_ee/franka_hand_black/visual/hand.dae\n'}
+[116.671898] (-) TimerEvent: {}
+[116.772547] (-) TimerEvent: {}
+[116.778464] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robot_ee/franka_hand_white/collision/hand.stl\n'}
+[116.872714] (-) TimerEvent: {}
+[116.880478] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robot_ee/franka_hand_white/visual/finger.dae\n'}
+[116.965782] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robot_ee/franka_hand_white/visual/hand.dae\n'}
+[116.972963] (-) TimerEvent: {}
+[117.073672] (-) TimerEvent: {}
+[117.077162] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/collision/hand.stl\n'}
+[117.163144] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/collision/link0.stl\n'}
+[117.173863] (-) TimerEvent: {}
+[117.259955] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/collision/link1.stl\n'}
+[117.274026] (-) TimerEvent: {}
+[117.345089] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/collision/link2.stl\n'}
+[117.374235] (-) TimerEvent: {}
+[117.427680] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/collision/link3.stl\n'}
+[117.474485] (-) TimerEvent: {}
+[117.529472] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/collision/link4.stl\n'}
+[117.574766] (-) TimerEvent: {}
+[117.633484] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/collision/link5.stl\n'}
+[117.675237] (-) TimerEvent: {}
+[117.719843] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/collision/link6.stl\n'}
+[117.775326] (-) TimerEvent: {}
+[117.798933] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/collision/link7.stl\n'}
+[117.875676] (-) TimerEvent: {}
+[117.899724] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/visual/finger.dae\n'}
+[117.975865] (-) TimerEvent: {}
+[117.996304] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/visual/hand.dae\n'}
+[118.076284] (-) TimerEvent: {}
+[118.101479] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/visual/link0.dae\n'}
+[118.176481] (-) TimerEvent: {}
+[118.190002] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/visual/link1.dae\n'}
+[118.276784] (-) TimerEvent: {}
+[118.286648] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/visual/link2.dae\n'}
+[118.372366] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/visual/link3.dae\n'}
+[118.377209] (-) TimerEvent: {}
+[118.457245] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/visual/link4.dae\n'}
+[118.477414] (-) TimerEvent: {}
+[118.562807] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/visual/link5.dae\n'}
+[118.577755] (-) TimerEvent: {}
+[118.678805] (-) TimerEvent: {}
+[118.707355] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/visual/link6.dae\n'}
+[118.778992] (-) TimerEvent: {}
+[118.816064] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/visual/link7.dae\n'}
+[118.879283] (-) TimerEvent: {}
+[118.942014] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/collision/link0.stl\n'}
+[118.979551] (-) TimerEvent: {}
+[119.027697] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/collision/link1.stl\n'}
+[119.079889] (-) TimerEvent: {}
+[119.118068] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/collision/link2.stl\n'}
+[119.180512] (-) TimerEvent: {}
+[119.204422] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/collision/link3.stl\n'}
+[119.280773] (-) TimerEvent: {}
+[119.293629] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/collision/link4.stl\n'}
+[119.381096] (-) TimerEvent: {}
+[119.398284] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/collision/link5.stl\n'}
+[119.481400] (-) TimerEvent: {}
+[119.487185] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/collision/link6.stl\n'}
+[119.563741] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/collision/link7.stl\n'}
+[119.581586] (-) TimerEvent: {}
+[119.682401] (-) TimerEvent: {}
+[119.685901] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/visual/link0.dae\n'}
+[119.779584] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/visual/link1.dae\n'}
+[119.782598] (-) TimerEvent: {}
+[119.855109] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/visual/link2.dae\n'}
+[119.882882] (-) TimerEvent: {}
+[119.935256] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/visual/link3.dae\n'}
+[119.983251] (-) TimerEvent: {}
+[120.020068] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/visual/link4.dae\n'}
+[120.083555] (-) TimerEvent: {}
+[120.102510] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/visual/link5.dae\n'}
+[120.183880] (-) TimerEvent: {}
+[120.186254] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/visual/link6.dae\n'}
+[120.264489] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/visual/link7.dae\n'}
+[120.284063] (-) TimerEvent: {}
+[120.366316] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/collision/link0.stl\n'}
+[120.384268] (-) TimerEvent: {}
+[120.453924] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/collision/link1.stl\n'}
+[120.484461] (-) TimerEvent: {}
+[120.537937] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/collision/link2.stl\n'}
+[120.584619] (-) TimerEvent: {}
+[120.624323] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/collision/link3.stl\n'}
+[120.684891] (-) TimerEvent: {}
+[120.709140] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/collision/link4.stl\n'}
+[120.785523] (-) TimerEvent: {}
+[120.787535] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/collision/link5.stl\n'}
+[120.860696] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/collision/link6.stl\n'}
+[120.885864] (-) TimerEvent: {}
+[120.932643] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/collision/link7.stl\n'}
+[120.986118] (-) TimerEvent: {}
+[121.026075] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/visual/link0.dae\n'}
+[121.086402] (-) TimerEvent: {}
+[121.109253] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/visual/link1.dae\n'}
+[121.186750] (-) TimerEvent: {}
+[121.196286] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/visual/link2.dae\n'}
+[121.282917] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/visual/link3.dae\n'}
+[121.286959] (-) TimerEvent: {}
+[121.362423] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/visual/link4.dae\n'}
+[121.387228] (-) TimerEvent: {}
+[121.446623] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/visual/link5.dae\n'}
+[121.487534] (-) TimerEvent: {}
+[121.573766] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/visual/link6.dae\n'}
+[121.588114] (-) TimerEvent: {}
+[121.689127] (-) TimerEvent: {}
+[121.721150] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/visual/link7.dae\n'}
+[121.789285] (-) TimerEvent: {}
+[121.829933] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/collision/link0.stl\n'}
+[121.889615] (-) TimerEvent: {}
+[121.898817] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/collision/link1.stl\n'}
+[121.968822] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/collision/link2.stl\n'}
+[121.989820] (-) TimerEvent: {}
+[122.045580] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/collision/link3.stl\n'}
+[122.090043] (-) TimerEvent: {}
+[122.125125] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/collision/link4.stl\n'}
+[122.190277] (-) TimerEvent: {}
+[122.210609] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/collision/link5.stl\n'}
+[122.290110] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/collision/link6.stl\n'}
+[122.292510] (-) TimerEvent: {}
+[122.376603] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/collision/link7.stl\n'}
+[122.392662] (-) TimerEvent: {}
+[122.494545] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/visual/link0.dae\n'}
+[122.496678] (-) TimerEvent: {}
+[122.579015] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/visual/link1.dae\n'}
+[122.596920] (-) TimerEvent: {}
+[122.657611] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/visual/link2.dae\n'}
+[122.697197] (-) TimerEvent: {}
+[122.739483] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/visual/link3.dae\n'}
+[122.797603] (-) TimerEvent: {}
+[122.818851] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/visual/link4.dae\n'}
+[122.891153] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/visual/link5.dae\n'}
+[122.897870] (-) TimerEvent: {}
+[122.957953] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/visual/link6.dae\n'}
+[122.998056] (-) TimerEvent: {}
+[123.029029] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/visual/link7.dae\n'}
+[123.098377] (-) TimerEvent: {}
+[123.138192] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/collision/link0.stl\n'}
+[123.198779] (-) TimerEvent: {}
+[123.222912] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/collision/link1.stl\n'}
+[123.299129] (-) TimerEvent: {}
+[123.307288] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/collision/link2.stl\n'}
+[123.389446] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/collision/link3.stl\n'}
+[123.399485] (-) TimerEvent: {}
+[123.479959] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/collision/link4.stl\n'}
+[123.499786] (-) TimerEvent: {}
+[123.566436] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/collision/link5.stl\n'}
+[123.600280] (-) TimerEvent: {}
+[123.654126] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/collision/link6.stl\n'}
+[123.700491] (-) TimerEvent: {}
+[123.735903] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/collision/link7.stl\n'}
+[123.800654] (-) TimerEvent: {}
+[123.840874] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/visual/link0.dae\n'}
+[123.900863] (-) TimerEvent: {}
+[123.917202] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/visual/link1.dae\n'}
+[123.993399] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/visual/link2.dae\n'}
+[124.001045] (-) TimerEvent: {}
+[124.070622] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/visual/link3.dae\n'}
+[124.101262] (-) TimerEvent: {}
+[124.155323] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/visual/link4.dae\n'}
+[124.201499] (-) TimerEvent: {}
+[124.268273] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/visual/link5.dae\n'}
+[124.301767] (-) TimerEvent: {}
+[124.350878] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/visual/link6.dae\n'}
+[124.402147] (-) TimerEvent: {}
+[124.430518] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/visual/link7.dae\n'}
+[124.502418] (-) TimerEvent: {}
+[124.547602] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/tmrv0_2/collision/tmrv0_2.stl\n'}
+[124.602653] (-) TimerEvent: {}
+[124.658172] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/tmrv0_2/visual/tmrv0_2.dae\n'}
+[124.702989] (-) TimerEvent: {}
+[124.765471] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//rviz/visualize_franka.rviz\n'}
+[124.803440] (-) TimerEvent: {}
+[124.829273] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//rviz/visualize_franka_duo.rviz\n'}
+[124.903830] (-) TimerEvent: {}
+[124.910258] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/ament_index/resource_index/package_run_dependencies/franka_description\n'}
+[124.988362] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/ament_index/resource_index/parent_prefix_path/franka_description\n'}
+[125.004186] (-) TimerEvent: {}
+[125.060867] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description/environment/ament_prefix_path.sh\n'}
+[125.104412] (-) TimerEvent: {}
+[125.123397] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description/environment/ament_prefix_path.dsv\n'}
+[125.185603] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description/environment/path.sh\n'}
+[125.204575] (-) TimerEvent: {}
+[125.253949] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description/environment/path.dsv\n'}
+[125.304760] (-) TimerEvent: {}
+[125.315635] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description/local_setup.bash\n'}
+[125.377126] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description/local_setup.sh\n'}
+[125.404986] (-) TimerEvent: {}
+[125.436975] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description/local_setup.zsh\n'}
+[125.495429] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description/local_setup.dsv\n'}
+[125.505229] (-) TimerEvent: {}
+[125.553973] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description/package.dsv\n'}
+[125.605389] (-) TimerEvent: {}
+[125.636257] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/ament_index/resource_index/packages/franka_description\n'}
+[125.705753] (-) TimerEvent: {}
+[125.719992] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description/cmake/franka_descriptionConfig.cmake\n'}
+[125.782396] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description/cmake/franka_descriptionConfig-version.cmake\n'}
+[125.806112] (-) TimerEvent: {}
+[125.846843] (franka_description) StdoutLine: {'line': b'-- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description/package.xml\n'}
+[125.894504] (franka_description) CommandEnded: {'returncode': 0}
+[125.906264] (-) TimerEvent: {}
+[126.006803] (-) TimerEvent: {}
+[126.107531] (-) TimerEvent: {}
+[126.208386] (-) TimerEvent: {}
+[126.308889] (-) TimerEvent: {}
+[126.409772] (-) TimerEvent: {}
+[126.510314] (-) TimerEvent: {}
+[126.610906] (-) TimerEvent: {}
+[126.711492] (-) TimerEvent: {}
+[126.812084] (-) TimerEvent: {}
+[126.889612] (franka_description) JobEnded: {'identifier': 'franka_description', 'rc': 0}
+[126.905856] (-) EventReactorShutdown: {}

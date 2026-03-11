@@ -1,0 +1,54 @@
+version: "3.8"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Factory 5.0 — Companion Services
+# Run: docker-compose up -d
+# Then open: http://localhost:3000  (Grafana, admin/factory50)
+#            http://localhost:8086  (InfluxDB)
+# ─────────────────────────────────────────────────────────────────────────────
+
+services:
+
+  # ── InfluxDB — Time Series Database ────────────────────────────────────────
+  influxdb:
+    image: influxdb:2.7
+    container_name: factory50_influxdb
+    ports:
+      - "8086:8086"
+    environment:
+      DOCKER_INFLUXDB_INIT_MODE:         setup
+      DOCKER_INFLUXDB_INIT_USERNAME:     factory50
+      DOCKER_INFLUXDB_INIT_PASSWORD:     factory50pass
+      DOCKER_INFLUXDB_INIT_ORG:          factory50_org
+      DOCKER_INFLUXDB_INIT_BUCKET:       robot_metrics
+      DOCKER_INFLUXDB_INIT_ADMIN_TOKEN:  factory50-super-token-2024
+    volumes:
+      - influxdb_data:/var/lib/influxdb2
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "influx", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ── Grafana — KPI Dashboard ─────────────────────────────────────────────────
+  grafana:
+    image: grafana/grafana:10.4.0
+    container_name: factory50_grafana
+    ports:
+      - "3000:3000"
+    environment:
+      GF_SECURITY_ADMIN_USER:     admin
+      GF_SECURITY_ADMIN_PASSWORD: factory50
+      GF_INSTALL_PLUGINS:         grafana-clock-panel
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./docker/grafana/provisioning:/etc/grafana/provisioning
+    depends_on:
+      influxdb:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  influxdb_data:
+  grafana_data:

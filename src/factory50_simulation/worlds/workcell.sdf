@@ -1,0 +1,435 @@
+<?xml version="1.0" ?>
+<!--
+  Factory 5.0 — Workcell World
+  ============================
+  Scene:  UR5e (Arm0) + Franka Panda (Arm1)
+  Task:   Box packing / palletizing pipeline
+  Layout:
+    - Input conveyor (left)  → UR5e picks boxes
+    - Transfer fixture (centre) → handover zone
+    - Output pallet (right)  → Franka packs boxes
+    - Human spawn zone (rear) → HRC testing
+
+  NOTE: Franka Panda is included as a static visual placeholder until
+        franka_ros2 is built from source. UR5e is fully controllable
+        via ros2_control from day 1.
+-->
+<sdf version="1.9">
+  <world name="factory50_workcell">
+
+    <!-- ── Physics ─────────────────────────────────────────────────────── -->
+    <physics name="1ms" type="ignored">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+
+    <!-- ── Plugins ─────────────────────────────────────────────────────── -->
+    <plugin filename="gz-sim-physics-system"
+            name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-user-commands-system"
+            name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-scene-broadcaster-system"
+            name="gz::sim::systems::SceneBroadcaster"/>
+    <plugin filename="gz-sim-contact-system"
+            name="gz::sim::systems::Contact"/>
+    <plugin filename="gz-sim-sensors-system"
+            name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+
+    <!-- ── Lighting ────────────────────────────────────────────────────── -->
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.9 0.9 0.9 1</diffuse>
+      <specular>0.3 0.3 0.3 1</specular>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <light type="point" name="workcell_light_1">
+      <pose>0 0 3.5 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>8</range>
+        <constant>0.2</constant>
+        <linear>0.1</linear>
+        <quadratic>0.01</quadratic>
+      </attenuation>
+    </light>
+
+    <!-- ── Ground Plane ─────────────────────────────────────────────────── -->
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><plane><normal>0 0 1</normal></plane></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><plane><normal>0 0 1</normal><size>20 20</size></plane></geometry>
+          <material>
+            <ambient>0.4 0.4 0.4 1</ambient>
+            <diffuse>0.5 0.5 0.5 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- ── Factory Floor Tiles ──────────────────────────────────────────── -->
+    <model name="factory_floor">
+      <static>true</static>
+      <pose>0 0 -0.01 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>6 5 0.02</size></box></geometry>
+          <material>
+            <ambient>0.6 0.6 0.65 1</ambient>
+            <diffuse>0.65 0.65 0.7 1</diffuse>
+          </material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>6 5 0.02</size></box></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- ── Safety Zone Floor Markings ───────────────────────────────────── -->
+    <!-- Yellow warning stripe around workcell perimeter -->
+    <model name="safety_marking_front">
+      <static>true</static>
+      <pose>0 -1.8 0.001 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>3.5 0.15 0.001</size></box></geometry>
+          <material>
+            <ambient>0.9 0.8 0.0 1</ambient>
+            <diffuse>1.0 0.9 0.0 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- ── Arm 0 Mount — UR5e (LEFT side) ───────────────────────────────── -->
+    <model name="arm0_base_mount">
+      <static>true</static>
+      <pose>-0.65 0.0 0.0 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>0.25 0.25 0.72</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>0.25 0.25 0.72</size></box></geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.25 0.25 0.25 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- ── Arm 1 Mount — Franka Panda (RIGHT side) ──────────────────────── -->
+    <model name="arm1_base_mount">
+      <static>true</static>
+      <pose>0.65 0.0 0.0 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>0.25 0.25 0.72</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>0.25 0.25 0.72</size></box></geometry>
+          <material>
+            <ambient>0.15 0.15 0.15 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- ── Work Table (centre) ──────────────────────────────────────────── -->
+    <model name="work_table">
+      <static>true</static>
+      <pose>0 0.3 0 0 0 0</pose>
+      <link name="link">
+        <!-- Table top -->
+        <collision name="top_collision">
+          <pose>0 0 0.72 0 0 0</pose>
+          <geometry><box><size>1.6 0.8 0.04</size></box></geometry>
+        </collision>
+        <visual name="top_visual">
+          <pose>0 0 0.72 0 0 0</pose>
+          <geometry><box><size>1.6 0.8 0.04</size></box></geometry>
+          <material>
+            <ambient>0.7 0.65 0.55 1</ambient>
+            <diffuse>0.75 0.70 0.60 1</diffuse>
+          </material>
+        </visual>
+        <!-- Table legs -->
+        <visual name="leg1"><pose>-0.75 -0.37 0.36 0 0 0</pose>
+          <geometry><box><size>0.05 0.05 0.72</size></box></geometry>
+          <material><ambient>0.3 0.3 0.3 1</ambient></material></visual>
+        <visual name="leg2"><pose> 0.75 -0.37 0.36 0 0 0</pose>
+          <geometry><box><size>0.05 0.05 0.72</size></box></geometry>
+          <material><ambient>0.3 0.3 0.3 1</ambient></material></visual>
+        <visual name="leg3"><pose>-0.75  0.37 0.36 0 0 0</pose>
+          <geometry><box><size>0.05 0.05 0.72</size></box></geometry>
+          <material><ambient>0.3 0.3 0.3 1</ambient></material></visual>
+        <visual name="leg4"><pose> 0.75  0.37 0.36 0 0 0</pose>
+          <geometry><box><size>0.05 0.05 0.72</size></box></geometry>
+          <material><ambient>0.3 0.3 0.3 1</ambient></material></visual>
+      </link>
+    </model>
+
+    <!-- ── Input Conveyor (LEFT — feeds boxes to UR5e) ──────────────────── -->
+    <model name="input_conveyor">
+      <static>true</static>
+      <pose>-0.65 0.8 0 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <pose>0 0 0.45 0 0 0</pose>
+          <geometry><box><size>0.4 0.8 0.9</size></box></geometry>
+        </collision>
+        <visual name="body">
+          <pose>0 0 0.45 0 0 0</pose>
+          <geometry><box><size>0.4 0.8 0.9</size></box></geometry>
+          <material>
+            <ambient>0.5 0.5 0.5 1</ambient>
+            <diffuse>0.55 0.55 0.55 1</diffuse>
+          </material>
+        </visual>
+        <!-- Conveyor belt surface -->
+        <visual name="belt">
+          <pose>0 0 0.91 0 0 0</pose>
+          <geometry><box><size>0.38 0.78 0.02</size></box></geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.25 0.25 0.25 1</diffuse>
+          </material>
+        </visual>
+        <!-- Label -->
+        <visual name="label_strip">
+          <pose>0 0.41 0.6 0 0 0</pose>
+          <geometry><box><size>0.38 0.02 0.2</size></box></geometry>
+          <material><ambient>0.1 0.5 0.1 1</ambient><diffuse>0.1 0.6 0.1 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- ── Transfer Fixture (CENTRE — handover zone) ────────────────────── -->
+    <model name="transfer_fixture">
+      <static>true</static>
+      <pose>0 0.5 0.74 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>0.25 0.25 0.04</size></box></geometry>
+        </collision>
+        <visual name="platform">
+          <geometry><box><size>0.25 0.25 0.04</size></box></geometry>
+          <material>
+            <ambient>0.8 0.6 0.0 1</ambient>
+            <diffuse>1.0 0.75 0.0 1</diffuse>
+          </material>
+        </visual>
+        <!-- Fixture corner guides -->
+        <visual name="guide1"><pose>-0.11 -0.11 0.04 0 0 0</pose>
+          <geometry><cylinder><radius>0.01</radius><length>0.04</length></cylinder></geometry>
+          <material><ambient>0.8 0.1 0.1 1</ambient></material></visual>
+        <visual name="guide2"><pose> 0.11 -0.11 0.04 0 0 0</pose>
+          <geometry><cylinder><radius>0.01</radius><length>0.04</length></cylinder></geometry>
+          <material><ambient>0.8 0.1 0.1 1</ambient></material></visual>
+        <visual name="guide3"><pose>-0.11  0.11 0.04 0 0 0</pose>
+          <geometry><cylinder><radius>0.01</radius><length>0.04</length></cylinder></geometry>
+          <material><ambient>0.8 0.1 0.1 1</ambient></material></visual>
+        <visual name="guide4"><pose> 0.11  0.11 0.04 0 0 0</pose>
+          <geometry><cylinder><radius>0.01</radius><length>0.04</length></cylinder></geometry>
+          <material><ambient>0.8 0.1 0.1 1</ambient></material></visual>
+      </link>
+    </model>
+
+    <!-- ── Output Pallet (RIGHT — Franka stacks boxes here) ─────────────── -->
+    <model name="output_pallet">
+      <static>true</static>
+      <pose>0.65 0.8 0 0 0 0</pose>
+      <link name="link">
+        <!-- Pallet base -->
+        <collision name="collision">
+          <pose>0 0 0.075 0 0 0</pose>
+          <geometry><box><size>0.6 0.8 0.15</size></box></geometry>
+        </collision>
+        <visual name="pallet_top">
+          <pose>0 0 0.14 0 0 0</pose>
+          <geometry><box><size>0.58 0.78 0.02</size></box></geometry>
+          <material>
+            <ambient>0.6 0.4 0.2 1</ambient>
+            <diffuse>0.65 0.45 0.25 1</diffuse>
+          </material>
+        </visual>
+        <visual name="pallet_mid">
+          <pose>0 0 0.08 0 0 0</pose>
+          <geometry><box><size>0.58 0.78 0.02</size></box></geometry>
+          <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.65 0.45 0.25 1</diffuse></material>
+        </visual>
+        <visual name="pallet_bot">
+          <pose>0 0 0.02 0 0 0</pose>
+          <geometry><box><size>0.58 0.78 0.02</size></box></geometry>
+          <material><ambient>0.6 0.4 0.2 1</ambient><diffuse>0.65 0.45 0.25 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- ── Box 1 (on input conveyor — waiting to be picked) ─────────────── -->
+    <model name="box_01">
+      <pose>-0.65 0.8 0.95 0 0 0</pose>
+      <link name="link">
+        <inertial>
+          <mass>0.5</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz></inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry><box><size>0.12 0.12 0.12</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>0.12 0.12 0.12</size></box></geometry>
+          <material>
+            <ambient>0.1 0.3 0.8 1</ambient>
+            <diffuse>0.15 0.4 0.9 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- ── Box 2 (queued on conveyor) ───────────────────────────────────── -->
+    <model name="box_02">
+      <pose>-0.65 1.0 0.95 0 0 0</pose>
+      <link name="link">
+        <inertial>
+          <mass>0.5</mass>
+          <inertia><ixx>0.001</ixx><iyy>0.001</iyy><izz>0.001</izz></inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry><box><size>0.12 0.12 0.12</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>0.12 0.12 0.12</size></box></geometry>
+          <material>
+            <ambient>0.1 0.3 0.8 1</ambient>
+            <diffuse>0.15 0.4 0.9 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- ── Safety Fence (rear + sides) ─────────────────────────────────── -->
+    <model name="fence_rear">
+      <static>true</static>
+      <pose>0 1.8 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <pose>0 0 0.9 0 0 0</pose>
+          <geometry><box><size>3.5 0.05 1.8</size></box></geometry>
+          <material>
+            <ambient>0.7 0.7 0.7 0.4</ambient>
+            <diffuse>0.8 0.8 0.8 0.4</diffuse>
+          </material>
+        </visual>
+        <collision name="collision">
+          <pose>0 0 0.9 0 0 0</pose>
+          <geometry><box><size>3.5 0.05 1.8</size></box></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="fence_left">
+      <static>true</static>
+      <pose>-1.75 0.5 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <pose>0 0 0.9 0 0 0</pose>
+          <geometry><box><size>0.05 2.6 1.8</size></box></geometry>
+          <material><ambient>0.7 0.7 0.7 0.4</ambient><diffuse>0.8 0.8 0.8 0.4</diffuse></material>
+        </visual>
+        <collision name="collision">
+          <pose>0 0 0.9 0 0 0</pose>
+          <geometry><box><size>0.05 2.6 1.8</size></box></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="fence_right">
+      <static>true</static>
+      <pose>1.75 0.5 0 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <pose>0 0 0.9 0 0 0</pose>
+          <geometry><box><size>0.05 2.6 1.8</size></box></geometry>
+          <material><ambient>0.7 0.7 0.7 0.4</ambient><diffuse>0.8 0.8 0.8 0.4</diffuse></material>
+        </visual>
+        <collision name="collision">
+          <pose>0 0 0.9 0 0 0</pose>
+          <geometry><box><size>0.05 2.6 1.8</size></box></geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- ── Depth Camera (for HRC human detection) ───────────────────────── -->
+    <model name="workcell_camera">
+      <static>true</static>
+      <pose>0 -1.2 2.2 0 0.6 1.5708</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry><box><size>0.09 0.025 0.025</size></box></geometry>
+          <material><ambient>0.1 0.1 0.1 1</ambient></material>
+        </visual>
+        <sensor name="depth_camera" type="depth_camera">
+          <update_rate>30</update_rate>
+          <topic>/camera/depth/image_raw</topic>
+          <camera>
+            <horizontal_fov>1.204</horizontal_fov>
+            <image>
+              <width>640</width>
+              <height>480</height>
+              <format>R_FLOAT32</format>
+            </image>
+            <clip><near>0.1</near><far>8.0</far></clip>
+          </camera>
+        </sensor>
+        <sensor name="color_camera" type="camera">
+          <update_rate>30</update_rate>
+          <topic>/camera/color/image_raw</topic>
+          <camera>
+            <horizontal_fov>1.204</horizontal_fov>
+            <image>
+              <width>640</width>
+              <height>480</height>
+              <format>RGB_INT8</format>
+            </image>
+            <clip><near>0.1</near><far>8.0</far></clip>
+          </camera>
+        </sensor>
+      </link>
+    </model>
+
+    <!-- ── GUI Camera position ──────────────────────────────────────────── -->
+    <gui fullscreen="0">
+      <plugin filename="MinimalScene" name="3D View">
+        <gz-gui>
+          <title>3D View</title>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="string" key="state">docked</property>
+        </gz-gui>
+        <engine>ogre2</engine>
+        <scene>scene</scene>
+        <ambient_light>0.4 0.4 0.4</ambient_light>
+        <background_color>0.18 0.18 0.22</background_color>
+        <camera_pose>-3.5 -2.5 2.8 0 0.45 0.75</camera_pose>
+      </plugin>
+      <plugin filename="GzSceneManager" name="Scene Manager"/>
+      <plugin filename="InteractiveViewControl" name="Interactive view control"/>
+      <plugin filename="EntityContextMenuPlugin" name="Entity context menu"/>
+      <plugin filename="TransformControl" name="Transform control"/>
+      <plugin filename="Shapes" name="Shapes"/>
+      <plugin filename="ComponentInspector" name="Component inspector"/>
+      <plugin filename="EntityTree" name="Entity tree"/>
+    </gui>
+
+  </world>
+</sdf>

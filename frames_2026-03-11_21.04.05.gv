@@ -1,0 +1,24 @@
+digraph G {
+"workcell_camera" -> "workcell_camera/link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"world" -> "workcell_camera"[label=" Broadcaster: default_authority\nAverage rate: 2.364\nBuffer length: 0.846\nMost recent transform: 1773263044.810922\nOldest transform: 1773263043.965041\n"];
+"workcell_camera/link" -> "workcell_camera/link/depth_camera"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"workcell_camera/link" -> "workcell_camera/link/color_camera"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"world" -> "box_01"[label=" Broadcaster: default_authority\nAverage rate: 2.894\nBuffer length: 1.037\nMost recent transform: 1773263043.148263\nOldest transform: 1773263042.111743\n"];
+"world" -> "box_02"[label=" Broadcaster: default_authority\nAverage rate: 2.894\nBuffer length: 1.037\nMost recent transform: 1773263043.148319\nOldest transform: 1773263042.111801\n"];
+"world" -> "ground_plane"[label=" Broadcaster: default_authority\nAverage rate: 1.516\nBuffer length: 2.639\nMost recent transform: 1773263044.810766\nOldest transform: 1773263042.171607\n"];
+"world" -> "factory_floor"[label=" Broadcaster: default_authority\nAverage rate: 1.516\nBuffer length: 2.639\nMost recent transform: 1773263044.810795\nOldest transform: 1773263042.171658\n"];
+"world" -> "work_table"[label=" Broadcaster: default_authority\nAverage rate: 1.516\nBuffer length: 2.639\nMost recent transform: 1773263044.810808\nOldest transform: 1773263042.171672\n"];
+"world" -> "input_conveyor"[label=" Broadcaster: default_authority\nAverage rate: 1.516\nBuffer length: 2.639\nMost recent transform: 1773263044.810822\nOldest transform: 1773263042.171686\n"];
+"world" -> "transfer_fixture"[label=" Broadcaster: default_authority\nAverage rate: 1.516\nBuffer length: 2.639\nMost recent transform: 1773263044.810834\nOldest transform: 1773263042.1717\n"];
+"world" -> "output_pallet"[label=" Broadcaster: default_authority\nAverage rate: 1.516\nBuffer length: 2.639\nMost recent transform: 1773263044.810848\nOldest transform: 1773263042.171714\n"];
+"world" -> "arm0_base_mount"[label=" Broadcaster: default_authority\nAverage rate: 1.516\nBuffer length: 2.639\nMost recent transform: 1773263044.81086\nOldest transform: 1773263042.171727\n"];
+"world" -> "arm1_base_mount"[label=" Broadcaster: default_authority\nAverage rate: 1.516\nBuffer length: 2.639\nMost recent transform: 1773263044.810872\nOldest transform: 1773263042.17174\n"];
+"world" -> "fence_rear"[label=" Broadcaster: default_authority\nAverage rate: 1.516\nBuffer length: 2.639\nMost recent transform: 1773263044.810885\nOldest transform: 1773263042.171753\n"];
+"world" -> "fence_left"[label=" Broadcaster: default_authority\nAverage rate: 1.516\nBuffer length: 2.639\nMost recent transform: 1773263044.810897\nOldest transform: 1773263042.171766\n"];
+"world" -> "fence_right"[label=" Broadcaster: default_authority\nAverage rate: 1.516\nBuffer length: 2.639\nMost recent transform: 1773263044.81091\nOldest transform: 1773263042.171779\n"];
+"world" -> "safety_marking_front"[label=" Broadcaster: default_authority\nAverage rate: 1.516\nBuffer length: 2.639\nMost recent transform: 1773263044.810963\nOldest transform: 1773263042.171805\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1773263045.88511"[ shape=plaintext ] ;
+}->"world";
+}

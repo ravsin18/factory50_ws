@@ -1,0 +1,221 @@
+[0.321s] Invoking command in '/workspaces/factory50_ws/build/franka_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /workspaces/factory50_ws/src/franka_description -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/factory50_ws/install/franka_description
+[1.854s] -- The C compiler identification is GNU 13.3.0
+[2.854s] -- The CXX compiler identification is GNU 13.3.0
+[3.263s] -- Detecting C compiler ABI info
+[6.787s] -- Detecting C compiler ABI info - done
+[6.873s] -- Check for working C compiler: /usr/bin/cc - skipped
+[6.876s] -- Detecting C compile features
+[6.878s] -- Detecting C compile features - done
+[7.051s] -- Detecting CXX compiler ABI info
+[10.740s] -- Detecting CXX compiler ABI info - done
+[10.877s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[10.878s] -- Detecting CXX compile features
+[10.884s] -- Detecting CXX compile features - done
+[11.277s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[12.608s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[13.253s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[14.755s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[21.183s] -- Added test 'copyright' to check source files copyright and LICENSE
+[74.301s] -- Added test 'flake8' to check Python code syntax and style conventions
+[74.303s] -- Configured 'flake8' exclude dirs and/or files: 
+[79.408s] -- Added test 'lint_cmake' to check CMake code style
+[82.146s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[106.339s] -- Added test 'xmllint' to check XML markup files
+[106.680s] -- Configuring done (106.0s)
+[107.190s] -- Generating done (0.4s)
+[107.467s] -- Build files have been written to: /workspaces/factory50_ws/build/franka_description
+[107.497s] Invoked command in '/workspaces/factory50_ws/build/franka_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /workspaces/factory50_ws/src/franka_description -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/factory50_ws/install/franka_description
+[107.510s] Invoking command in '/workspaces/factory50_ws/build/franka_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/factory50_ws/build/franka_description -- -j4 -l4
+[107.724s] Invoked command in '/workspaces/factory50_ws/build/franka_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /workspaces/factory50_ws/build/franka_description -- -j4 -l4
+[107.758s] Invoking command in '/workspaces/factory50_ws/build/franka_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/factory50_ws/build/franka_description
+[107.785s] -- Install configuration: "Release"
+[107.800s] -- Execute custom install script
+[107.863s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//launch/visualize_franka.launch.py
+[107.934s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//launch/visualize_franka_duo.launch.py
+[108.575s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/common/franka_arm.ros2_control.xacro
+[108.642s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/common/franka_arm.srdf.xacro
+[108.714s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/common/franka_arm.xacro
+[108.786s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/common/franka_robot.xacro
+[108.863s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/common/group_definition.xacro
+[108.936s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/common/utils.xacro
+[109.037s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fer/dynamics.yaml
+[109.108s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fer/fer.srdf.xacro
+[109.183s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fer/fer.urdf.xacro
+[109.251s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fer/inertials.yaml
+[109.323s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fer/joint_limits.yaml
+[109.398s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fer/kinematics.yaml
+[109.485s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fp3/accelerometers.yaml
+[109.549s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fp3/dynamics.yaml
+[109.609s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fp3/fp3.srdf.xacro
+[109.672s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fp3/fp3.urdf.xacro
+[109.748s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fp3/inertials.yaml
+[109.817s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fp3/joint_limits.yaml
+[109.891s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fp3/kinematics.yaml
+[109.985s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3/accelerometers.yaml
+[110.059s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3/dynamics.yaml
+[110.134s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3/fr3.srdf.xacro
+[110.208s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3/fr3.urdf.xacro
+[110.281s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3/inertials.yaml
+[110.350s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3/joint_limits.yaml
+[110.418s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3/kinematics.yaml
+[110.506s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3_duo/fr3_duo.srdf.xacro
+[110.568s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3_duo/fr3_duo.urdf.xacro
+[110.631s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3_duo/fr3_duo_arm.urdf.xacro
+[110.693s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3_duo/fr3_duo_fixed_structure.urdf.xacro
+[110.763s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3_duo/fr3_duo_head.xacro
+[110.863s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3_duo/fr3_duo_mount/fr3_duo_mount.xacro
+[110.948s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3_duo/fr3_duo_mount/inertials.yaml
+[111.026s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3_duo/fr3_duo_mount/kinematics.yaml
+[111.129s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3v2/accelerometers.yaml
+[111.215s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3v2/dynamics.yaml
+[111.379s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3v2/fr3v2.srdf.xacro
+[111.525s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3v2/fr3v2.urdf.xacro
+[111.630s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3v2/inertials.yaml
+[111.691s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3v2/joint_limits.yaml
+[111.755s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3v2/kinematics.yaml
+[111.843s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3v2_1/accelerometers.yaml
+[111.916s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3v2_1/dynamics.yaml
+[111.991s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3v2_1/fr3v2_1.srdf.xacro
+[112.064s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3v2_1/fr3v2_1.urdf.xacro
+[112.138s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3v2_1/inertials.yaml
+[112.211s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3v2_1/joint_limits.yaml
+[112.279s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/fr3v2_1/kinematics.yaml
+[112.367s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/mobile_fr3_duo_v0_2/mobile_fr3_duo.ros2_control.xacro
+[112.433s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/mobile_fr3_duo_v0_2/mobile_fr3_duo_v0_2.urdf.xacro
+[112.508s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/mobile_fr3_duo_v0_2/mobile_fr3_duo_v0_2.xacro
+[112.588s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/tmrv0_2/argo_drive.xacro
+[112.650s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/tmrv0_2/caster_wheel.xacro
+[112.711s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/tmrv0_2/inertia.xacro
+[112.772s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/tmrv0_2/rocker_arm.xacro
+[112.840s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/tmrv0_2/tmrv0_2.ros2_control.xacro
+[112.912s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/tmrv0_2/tmrv0_2.urdf.xacro
+[112.986s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//robots/tmrv0_2/tmrv0_2.xacro
+[113.208s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//end_effectors/cobot_pump/cobot_pump.urdf.xacro
+[113.288s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//end_effectors/cobot_pump/cobot_pump_arguments.xacro
+[113.355s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//end_effectors/cobot_pump/inertials.yaml
+[113.445s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//end_effectors/common/ee_with_one_link.xacro
+[113.522s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//end_effectors/common/franka_hand.xacro
+[113.587s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//end_effectors/common/utils.xacro
+[113.665s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//end_effectors/franka_hand/franka_hand.srdf.xacro
+[113.724s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//end_effectors/franka_hand/franka_hand.urdf.xacro
+[113.789s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//end_effectors/franka_hand/franka_hand_arguments.xacro
+[113.868s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//end_effectors/franka_hand/inertials.yaml
+[115.423s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/accessories/fr3_duo_head/collision/fr3_duo_head.stl
+[115.543s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/accessories/fr3_duo_head/visual/fr3_duo_head.dae
+[115.658s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/accessories/fr3_duo_mount/collision/fr3_duo_cover.stl
+[115.734s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/accessories/fr3_duo_mount/collision/fr3_duo_mount.stl
+[115.828s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/accessories/fr3_duo_mount/visual/fr3_duo_cover.dae
+[115.906s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/accessories/fr3_duo_mount/visual/fr3_duo_mount.dae
+[116.021s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/accessories/franka_spine/collision/franka_spine.stl
+[116.129s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/accessories/franka_spine/visual/franka_spine.dae
+[116.230s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robot_ee/cobot_pump/collision/cobot_pump.stl
+[116.344s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robot_ee/cobot_pump/visual/cobot_pump.dae
+[116.463s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robot_ee/franka_hand_black/collision/hand.stl
+[116.580s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robot_ee/franka_hand_black/visual/finger.dae
+[116.662s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robot_ee/franka_hand_black/visual/hand.dae
+[116.772s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robot_ee/franka_hand_white/collision/hand.stl
+[116.874s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robot_ee/franka_hand_white/visual/finger.dae
+[116.959s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robot_ee/franka_hand_white/visual/hand.dae
+[117.071s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/collision/hand.stl
+[117.157s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/collision/link0.stl
+[117.254s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/collision/link1.stl
+[117.338s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/collision/link2.stl
+[117.421s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/collision/link3.stl
+[117.523s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/collision/link4.stl
+[117.627s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/collision/link5.stl
+[117.713s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/collision/link6.stl
+[117.793s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/collision/link7.stl
+[117.893s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/visual/finger.dae
+[117.990s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/visual/hand.dae
+[118.095s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/visual/link0.dae
+[118.183s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/visual/link1.dae
+[118.281s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/visual/link2.dae
+[118.365s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/visual/link3.dae
+[118.450s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/visual/link4.dae
+[118.557s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/visual/link5.dae
+[118.703s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/visual/link6.dae
+[118.810s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fer/visual/link7.dae
+[118.935s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/collision/link0.stl
+[119.021s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/collision/link1.stl
+[119.112s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/collision/link2.stl
+[119.198s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/collision/link3.stl
+[119.287s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/collision/link4.stl
+[119.392s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/collision/link5.stl
+[119.481s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/collision/link6.stl
+[119.557s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/collision/link7.stl
+[119.679s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/visual/link0.dae
+[119.773s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/visual/link1.dae
+[119.849s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/visual/link2.dae
+[119.929s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/visual/link3.dae
+[120.013s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/visual/link4.dae
+[120.096s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/visual/link5.dae
+[120.180s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/visual/link6.dae
+[120.258s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fp3/visual/link7.dae
+[120.359s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/collision/link0.stl
+[120.447s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/collision/link1.stl
+[120.531s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/collision/link2.stl
+[120.617s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/collision/link3.stl
+[120.703s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/collision/link4.stl
+[120.781s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/collision/link5.stl
+[120.854s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/collision/link6.stl
+[120.926s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/collision/link7.stl
+[121.020s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/visual/link0.dae
+[121.104s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/visual/link1.dae
+[121.191s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/visual/link2.dae
+[121.276s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/visual/link3.dae
+[121.356s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/visual/link4.dae
+[121.440s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/visual/link5.dae
+[121.569s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/visual/link6.dae
+[121.716s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3/visual/link7.dae
+[121.823s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/collision/link0.stl
+[121.892s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/collision/link1.stl
+[121.962s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/collision/link2.stl
+[122.039s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/collision/link3.stl
+[122.118s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/collision/link4.stl
+[122.204s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/collision/link5.stl
+[122.284s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/collision/link6.stl
+[122.370s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/collision/link7.stl
+[122.488s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/visual/link0.dae
+[122.572s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/visual/link1.dae
+[122.651s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/visual/link2.dae
+[122.733s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/visual/link3.dae
+[122.812s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/visual/link4.dae
+[122.885s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/visual/link5.dae
+[122.951s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/visual/link6.dae
+[123.022s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2/visual/link7.dae
+[123.133s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/collision/link0.stl
+[123.216s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/collision/link1.stl
+[123.300s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/collision/link2.stl
+[123.383s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/collision/link3.stl
+[123.474s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/collision/link4.stl
+[123.561s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/collision/link5.stl
+[123.648s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/collision/link6.stl
+[123.729s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/collision/link7.stl
+[123.834s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/visual/link0.dae
+[123.912s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/visual/link1.dae
+[123.987s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/visual/link2.dae
+[124.064s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/visual/link3.dae
+[124.149s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/visual/link4.dae
+[124.262s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/visual/link5.dae
+[124.345s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/visual/link6.dae
+[124.424s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/fr3v2_1/visual/link7.dae
+[124.541s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/tmrv0_2/collision/tmrv0_2.stl
+[124.651s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//meshes/robots/tmrv0_2/visual/tmrv0_2.dae
+[124.759s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//rviz/visualize_franka.rviz
+[124.823s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description//rviz/visualize_franka_duo.rviz
+[124.904s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/ament_index/resource_index/package_run_dependencies/franka_description
+[124.982s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/ament_index/resource_index/parent_prefix_path/franka_description
+[125.055s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description/environment/ament_prefix_path.sh
+[125.117s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description/environment/ament_prefix_path.dsv
+[125.179s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description/environment/path.sh
+[125.248s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description/environment/path.dsv
+[125.309s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description/local_setup.bash
+[125.371s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description/local_setup.sh
+[125.430s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description/local_setup.zsh
+[125.489s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description/local_setup.dsv
+[125.548s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description/package.dsv
+[125.630s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/ament_index/resource_index/packages/franka_description
+[125.714s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description/cmake/franka_descriptionConfig.cmake
+[125.776s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description/cmake/franka_descriptionConfig-version.cmake
+[125.841s] -- Symlinking: /workspaces/factory50_ws/install/franka_description/share/franka_description/package.xml
+[125.887s] Invoked command in '/workspaces/factory50_ws/build/franka_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /workspaces/factory50_ws/build/franka_description
