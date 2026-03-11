@@ -59,7 +59,7 @@ A fully simulated **Factory 5.0** robotic workcell implementing:
 
 ### Prerequisites
 - Windows 11 + WSL2 + Docker Desktop
-- NVIDIA GPU (GTX 1650 Ti or better)
+
 - VS Code + Dev Containers extension
 
 ### 1. Clone & Open in Dev Container
@@ -67,7 +67,7 @@ A fully simulated **Factory 5.0** robotic workcell implementing:
 git clone https://github.com/YOUR_USERNAME/factory50_ws.git
 cd factory50_ws
 code .
-# VS Code: "Reopen in Container" → builds Docker image automatically
+
 ```
 
 ### 2. Start Companion Services (new terminal)
@@ -154,15 +154,15 @@ Connect **Foxglove Studio** to `ws://localhost:8765` for 3D visualization.
 
 ---
 
-## 🇩🇪 German Industry Relevance
 
-| Company | Relevant Module |
+
+| Relevant Module |
 |---------|----------------|
-| KUKA (Augsburg) | ROS2 + MoveIt2 + Digital Twin |
-| Neura Robotics (Metzingen) | HRC + MARL + Safety |
-| Siemens Digital Industries | OPC-UA + Grafana + Industry 4.0 |
-| GEBHARDT Intralogistics | Box packing pipeline + ROS2 |
-| BMW / Mercedes R&D | RL + sim-to-real + digital twin |
+| ROS2 + MoveIt2 + Digital Twin |
+| HRC + MARL + Safety |
+| OPC-UA + Grafana + Industry 4.0 |
+| Box packing pipeline + ROS2 |
+| RL + sim-to-real + digital twin |
 
 ---
 
