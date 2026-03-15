@@ -1,2 +1,23 @@
+# ROS2 build artifacts
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# Temporary files
 *.pdf
-frames_*.pdf
+*.bag
+*.db3
+/tmp/
+
+# VS Code
+.vscode/settings.json
+
+# Large binary files
+*.dae
+*.stl
